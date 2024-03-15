@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://a-b-ab.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Mar 2024 10:56:49 +0800</lastBuildDate>
+    <atom:link href="https://a-b-ab.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://a-b-ab.github.io/posts/linux/</link>
+      <pubDate>Fri, 15 Mar 2024 10:56:49 +0800</pubDate>
+      <guid>https://a-b-ab.github.io/posts/linux/</guid>
+      <description>#Windo和Linux双系统方法 ##磁盘分区 1.打开计算机管理 2.找到磁盘管理 3.选择你要压缩的盘，你压缩掉的空间将作为新系统的空间 4.右键打开你要压缩的盘符，点击压缩卷 5.压缩后的效果 ##下载Linux镜像 1.下载 Ubuntu 镜像，这里可以去官方下载，但是官方在国外，默认外网链接可能网速有点小慢。（科技玩家例外） 更好的选择是国内的资源镜像网站，比如说清华大学开源软件镜像站&#xA;清华大学开源软件镜像站 https://mirrors.tuna.tsinghua.edu.cn/ ##准备u盘刻盘工具 我用的是UltralSO&#xA;https://cn.ultraiso.net/xiazai.html&#xA;下载后打开，找到你下载的镜像文件，找到后，点击右上角的启动-&amp;gt;写入硬盘映像 写入时记得插入u盘，这个u盘将作为启动盘 写入时，这个u盘的数据全会被格式化，谨慎操作&#xA;然后点击写入就可以了&#xA;##开机引导界面 将写好的映像文件的U盘插入你需要的电脑，在开始时按f12，本人用的是联想，不同电脑可能不同，正常都是f12&#xA;在引导界面可以看到几个选项，选择你的u盘作为启动项，反正不是window和network就是了&#xA;接下来你会进入这个界面 点击这个install软件进入配置 选语言-&amp;gt;安装类型我选最小安装-&amp;gt;进行磁盘分区，我分了四个盘，具体操作，选择你事先被压缩的空间，点击右下角的加号&#xA;安装后-&amp;gt;选择地区-&amp;gt;设置账户密码-&amp;gt;重启-&amp;gt;输入密码，ok&#xA;以后你每次开机时都可以选择windo和Linux之一的系统进行启动</description>
+    </item>
+    <item>
+      <title>Text</title>
+      <link>https://a-b-ab.github.io/posts/text/</link>
+      <pubDate>Thu, 14 Mar 2024 12:46:58 +0800</pubDate>
+      <guid>https://a-b-ab.github.io/posts/text/</guid>
+      <description>求求你，成功吧！！</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>https://a-b-ab.github.io/posts/my-first-post/</link>
+      <pubDate>Thu, 14 Mar 2024 02:23:58 +0800</pubDate>
+      <guid>https://a-b-ab.github.io/posts/my-first-post/</guid>
+      <description>我真的要癫了</description>
+    </item>
+  </channel>
+</rss>
