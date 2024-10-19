@@ -7,6 +7,164 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright><atom:link href="https://a-b-ab.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>基于github和vercel部署自定义域名网站</title>
+        <link>https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/</link>
+        <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/6015cf7ecba254fdaf9793afbffab6b2.jpg" alt="Featured image of post 基于github和vercel部署自定义域名网站" /&gt;&lt;h1 id=&#34;基于github和vercel部署自定义域名网站&#34;&gt;基于github和vercel部署自定义域名网站
+&lt;/h1&gt;&lt;p&gt;假设你已经可以在本地运行个人网站&lt;/p&gt;
+&lt;p&gt;其实就是&lt;code&gt;hugo&lt;/code&gt;主题文件配置好后：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hugo server -D&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;就可以了，接下来，如果项目根文件有&lt;code&gt;public&lt;/code&gt;文件夹，直接删了&lt;/p&gt;
+&lt;p&gt;然后执行&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hugo&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这样就会生成&lt;code&gt;public&lt;/code&gt;文件夹，&lt;code&gt;public&lt;/code&gt;文件夹包含了你网站的所有静态资源，如 HTML 文件、CSS 文件、JavaScript 文件和图片等，这些文件是网站的前端资源，浏览器会请求这些文件来渲染和显示网页内容&lt;/p&gt;
+&lt;p&gt;也就是说你在&lt;code&gt;github&lt;/code&gt;创建仓库后，把&lt;code&gt;public&lt;/code&gt;文件夹提交到仓库，启用&lt;code&gt;github page&lt;/code&gt;就可以将你的网站进行托管了，就是别人可以通过&lt;code&gt;url&lt;/code&gt;访问你的个人网站&lt;/p&gt;
+&lt;h2 id=&#34;创建github仓库&#34;&gt;创建&lt;code&gt;github&lt;/code&gt;仓库
+&lt;/h2&gt;&lt;p&gt;注册&lt;code&gt;github&lt;/code&gt;账号，在页面左侧有个&lt;code&gt;new&lt;/code&gt;点击，接下来你会看到&lt;code&gt;Repository name&lt;/code&gt;,建议按&lt;code&gt;GitHub账户名+github.io&lt;/code&gt;填写，然后仓库选择公开(默认)，然后点击就创建仓库。&lt;/p&gt;
+&lt;p&gt;创建仓库后，复制你的仓库地址。在&lt;code&gt;public&lt;/code&gt;启用终端，执行以下命令&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git init&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git add .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git commit -m &amp;ldquo;信息(随意)&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git branch -M main&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git remote add origin &amp;lt;远程仓库地址&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git push -u origin main&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;刷新一下你的远程仓库里面就有&lt;code&gt;public&lt;/code&gt;文件了&lt;/p&gt;
+&lt;h2 id=&#34;进行github-page托管&#34;&gt;进行&lt;code&gt;github page&lt;/code&gt;托管
+&lt;/h2&gt;&lt;p&gt;如图：在仓库主页点击&lt;code&gt;settings&lt;/code&gt;然后进入&lt;code&gt;pages&lt;/code&gt;，看到图中的&lt;code&gt;branch&lt;/code&gt;默认以&lt;code&gt;main&lt;/code&gt;作为部署分支，点击&lt;code&gt;save&lt;/code&gt;然后过一会在页面可以看到&lt;code&gt;visit site&lt;/code&gt;点击后就可以跳转到你的网站了，别人可以通过这个&lt;code&gt;url&lt;/code&gt;来访问你的网站了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image.png&#34;
+	width=&#34;2024&#34;
+	height=&#34;870&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image_hu40d989dc8ae1953ceee15779ae0caf1b_136473_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image_hu40d989dc8ae1953ceee15779ae0caf1b_136473_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;232&#34;
+		data-flex-basis=&#34;558px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;后续提交&#34;&gt;后续提交
+&lt;/h2&gt;&lt;p&gt;改动文件后，在项目根目录执行&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hugo&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后进入&lt;code&gt;public&lt;/code&gt;文件执行&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git add .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git commit -m &amp;ldquo;try&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git push&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;就可以了&lt;/p&gt;
+&lt;h2 id=&#34;进行vercel托管&#34;&gt;进行&lt;code&gt;vercel&lt;/code&gt;托管
+&lt;/h2&gt;&lt;p&gt;vercel类似于github page，但远比github page强大，速度也快得多得多，而且将Github授权给vercel后，可以达到最优雅的发布体验，只需将代码轻轻一推，项目就自动更新部署了&lt;/p&gt;
+&lt;p&gt;先进入&lt;a class=&#34;link&#34; href=&#34;https://www.bing.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;vercel&lt;/code&gt;官网&lt;/a&gt;,注册账户,建议使用&lt;code&gt;github&lt;/code&gt;账号关联&lt;/p&gt;
+&lt;p&gt;点击 &lt;code&gt;add new&lt;/code&gt;或者&lt;code&gt;import project&lt;/code&gt;，然后&lt;code&gt;import&lt;/code&gt;对应的你想进行托管的&lt;code&gt;github&lt;/code&gt;仓库&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1.png&#34;
+	width=&#34;2544&#34;
+	height=&#34;1311&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1_huc7ee46cd0b42ce6e0fda5bc34b360678_331363_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1_huc7ee46cd0b42ce6e0fda5bc34b360678_331363_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;465px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;因为你的&lt;code&gt;public&lt;/code&gt;已经是静态文件了，可以直接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2.png&#34;
+	width=&#34;1028&#34;
+	height=&#34;545&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2_hu83083ecc4073af75f5bb4293c213762b_26591_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2_hu83083ecc4073af75f5bb4293c213762b_26591_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;188&#34;
+		data-flex-basis=&#34;452px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然后点击&lt;code&gt;visit&lt;/code&gt;就可以看到&lt;code&gt;vercel&lt;/code&gt;托管的网站了&lt;/p&gt;
+&lt;h2 id=&#34;自定义域名&#34;&gt;自定义域名
+&lt;/h2&gt;&lt;p&gt;首先你得买个域名先，这一步以后写，国内的域名需要备案，我买的是国外的域名，用的是&lt;code&gt;cloudflare&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;点击你的&lt;code&gt;vercel&lt;/code&gt;对应托管的网站&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3.png&#34;
+	width=&#34;2240&#34;
+	height=&#34;1043&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3_huca6a440835fbd804f3fab4670297740f_442824_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3_huca6a440835fbd804f3fab4670297740f_442824_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;214&#34;
+		data-flex-basis=&#34;515px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;点击 &lt;code&gt;Domains&lt;/code&gt;在输入框输入你要绑定的自定义域名，然后点击&lt;code&gt;add&lt;/code&gt;,完成后。&lt;/p&gt;
+&lt;p&gt;进入你管理域名的软件，进行域名解析，就可以了
+&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4.png&#34;
+	width=&#34;2080&#34;
+	height=&#34;1057&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4_hu5265a0839d6e309e57e8c02711aa1edd_143494_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4_hu5265a0839d6e309e57e8c02711aa1edd_143494_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;196&#34;
+		data-flex-basis=&#34;472px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;域名解析用&lt;code&gt;cname&lt;/code&gt;，然后名称是自定义的域名，后面的是你在&lt;code&gt;vercel&lt;/code&gt;中&lt;code&gt;add&lt;/code&gt;操作得到的域名，保存就可以了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5.png&#34;
+	width=&#34;2482&#34;
+	height=&#34;830&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5_hu383dd86c8eea783eeb5619e5c624454b_1259521_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5_hu383dd86c8eea783eeb5619e5c624454b_1259521_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;299&#34;
+		data-flex-basis=&#34;717px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Linux命令简略</title>
         <link>https://a-b-ab.github.io/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/</link>
         <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>

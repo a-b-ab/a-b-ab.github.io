@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="黄昏见证虔诚的信徒">
+<title>基于github和vercel部署自定义域名网站</title>
+
+<link rel='canonical' href='https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/'>
+
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="基于github和vercel部署自定义域名网站">
+<meta property='og:description' content="黄昏见证虔诚的信徒">
+<meta property='og:url' content='https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/'>
+<meta property='og:site_name' content='乌鸦'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-10-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-10-19T22:30:01&#43;08:00'/><meta property='og:image' content='https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/6015cf7ecba254fdaf9793afbffab6b2.jpg' />
+<meta name="twitter:title" content="基于github和vercel部署自定义域名网站">
+<meta name="twitter:description" content="黄昏见证虔诚的信徒"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/6015cf7ecba254fdaf9793afbffab6b2.jpg' />
+    <link rel="shortcut icon" href="/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hua7c6426d55aaa478c31955be28d7bc27_584920_300x0_resize_q75_box.jpg" width="300"
+                            height="363" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍔</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">乌鸦</a></h1>
+            <h2 class="site-description">所行皆坦途，所愿皆如期</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#创建github仓库">创建<code>github</code>仓库</a></li>
+    <li><a href="#进行github-page托管">进行<code>github page</code>托管</a></li>
+    <li><a href="#后续提交">后续提交</a></li>
+    <li><a href="#进行vercel托管">进行<code>vercel</code>托管</a></li>
+    <li><a href="#自定义域名">自定义域名</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/">
+                <img src="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/6015cf7ecba254fdaf9793afbffab6b2_huabd41559441e7fad3c84db969d05be77_2108767_800x0_resize_q75_box.jpg"
+                        srcset="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/6015cf7ecba254fdaf9793afbffab6b2_huabd41559441e7fad3c84db969d05be77_2108767_800x0_resize_q75_box.jpg 800w, /p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/6015cf7ecba254fdaf9793afbffab6b2_huabd41559441e7fad3c84db969d05be77_2108767_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post 基于github和vercel部署自定义域名网站" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/hugo/" >
+                Hugo
+            </a>
+        
+            <a href="/categories/vercel/" >
+                Vercel
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/">基于github和vercel部署自定义域名网站</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            黄昏见证虔诚的信徒
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-10-19</time>
+            </div>
+        
+
+        <div class="article-lastmod">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time>
+                    Oct 19, 2024 22:30 CST
+                </time>
+            </div>
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="基于github和vercel部署自定义域名网站">基于github和vercel部署自定义域名网站
+</h1><p>假设你已经可以在本地运行个人网站</p>
+<p>其实就是<code>hugo</code>主题文件配置好后：</p>
+<blockquote>
+<p>hugo server -D</p>
+</blockquote>
+<p>就可以了，接下来，如果项目根文件有<code>public</code>文件夹，直接删了</p>
+<p>然后执行</p>
+<blockquote>
+<p>hugo</p>
+</blockquote>
+<p>这样就会生成<code>public</code>文件夹，<code>public</code>文件夹包含了你网站的所有静态资源，如 HTML 文件、CSS 文件、JavaScript 文件和图片等，这些文件是网站的前端资源，浏览器会请求这些文件来渲染和显示网页内容</p>
+<p>也就是说你在<code>github</code>创建仓库后，把<code>public</code>文件夹提交到仓库，启用<code>github page</code>就可以将你的网站进行托管了，就是别人可以通过<code>url</code>访问你的个人网站</p>
+<h2 id="创建github仓库">创建<code>github</code>仓库
+</h2><p>注册<code>github</code>账号，在页面左侧有个<code>new</code>点击，接下来你会看到<code>Repository name</code>,建议按<code>GitHub账户名+github.io</code>填写，然后仓库选择公开(默认)，然后点击就创建仓库。</p>
+<p>创建仓库后，复制你的仓库地址。在<code>public</code>启用终端，执行以下命令</p>
+<blockquote>
+<p>git init</p>
+</blockquote>
+<blockquote>
+<p>git add .</p>
+</blockquote>
+<blockquote>
+<p>git commit -m &ldquo;信息(随意)&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>git branch -M main</p>
+</blockquote>
+<blockquote>
+<p>git remote add origin &lt;远程仓库地址&gt;</p>
+</blockquote>
+<blockquote>
+<p>git push -u origin main</p>
+</blockquote>
+<p>刷新一下你的远程仓库里面就有<code>public</code>文件了</p>
+<h2 id="进行github-page托管">进行<code>github page</code>托管
+</h2><p>如图：在仓库主页点击<code>settings</code>然后进入<code>pages</code>，看到图中的<code>branch</code>默认以<code>main</code>作为部署分支，点击<code>save</code>然后过一会在页面可以看到<code>visit site</code>点击后就可以跳转到你的网站了，别人可以通过这个<code>url</code>来访问你的网站了</p>
+<p><img src="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image.png"
+	width="2024"
+	height="870"
+	srcset="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image_hu40d989dc8ae1953ceee15779ae0caf1b_136473_480x0_resize_box_3.png 480w, /p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image_hu40d989dc8ae1953ceee15779ae0caf1b_136473_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="232"
+		data-flex-basis="558px"
+	
+></p>
+<h2 id="后续提交">后续提交
+</h2><p>改动文件后，在项目根目录执行</p>
+<blockquote>
+<p>hugo</p>
+</blockquote>
+<p>然后进入<code>public</code>文件执行</p>
+<blockquote>
+<p>git add .</p>
+</blockquote>
+<blockquote>
+<p>git commit -m &ldquo;try&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>git push</p>
+</blockquote>
+<p>就可以了</p>
+<h2 id="进行vercel托管">进行<code>vercel</code>托管
+</h2><p>vercel类似于github page，但远比github page强大，速度也快得多得多，而且将Github授权给vercel后，可以达到最优雅的发布体验，只需将代码轻轻一推，项目就自动更新部署了</p>
+<p>先进入<a class="link" href="https://www.bing.com/"  target="_blank" rel="noopener"
+    ><code>vercel</code>官网</a>,注册账户,建议使用<code>github</code>账号关联</p>
+<p>点击 <code>add new</code>或者<code>import project</code>，然后<code>import</code>对应的你想进行托管的<code>github</code>仓库</p>
+<p><img src="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1.png"
+	width="2544"
+	height="1311"
+	srcset="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1_huc7ee46cd0b42ce6e0fda5bc34b360678_331363_480x0_resize_box_3.png 480w, /p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1_huc7ee46cd0b42ce6e0fda5bc34b360678_331363_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="194"
+		data-flex-basis="465px"
+	
+></p>
+<p>因为你的<code>public</code>已经是静态文件了，可以直接</p>
+<p><img src="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2.png"
+	width="1028"
+	height="545"
+	srcset="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2_hu83083ecc4073af75f5bb4293c213762b_26591_480x0_resize_box_3.png 480w, /p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2_hu83083ecc4073af75f5bb4293c213762b_26591_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="188"
+		data-flex-basis="452px"
+	
+></p>
+<p>然后点击<code>visit</code>就可以看到<code>vercel</code>托管的网站了</p>
+<h2 id="自定义域名">自定义域名
+</h2><p>首先你得买个域名先，这一步以后写，国内的域名需要备案，我买的是国外的域名，用的是<code>cloudflare</code></p>
+<p>点击你的<code>vercel</code>对应托管的网站</p>
+<p><img src="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3.png"
+	width="2240"
+	height="1043"
+	srcset="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3_huca6a440835fbd804f3fab4670297740f_442824_480x0_resize_box_3.png 480w, /p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3_huca6a440835fbd804f3fab4670297740f_442824_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="214"
+		data-flex-basis="515px"
+	
+></p>
+<p>点击 <code>Domains</code>在输入框输入你要绑定的自定义域名，然后点击<code>add</code>,完成后。</p>
+<p>进入你管理域名的软件，进行域名解析，就可以了
+<img src="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4.png"
+	width="2080"
+	height="1057"
+	srcset="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4_hu5265a0839d6e309e57e8c02711aa1edd_143494_480x0_resize_box_3.png 480w, /p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4_hu5265a0839d6e309e57e8c02711aa1edd_143494_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="196"
+		data-flex-basis="472px"
+	
+></p>
+<p>域名解析用<code>cname</code>，然后名称是自定义的域名，后面的是你在<code>vercel</code>中<code>add</code>操作得到的域名，保存就可以了</p>
+<p><img src="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5.png"
+	width="2482"
+	height="830"
+	srcset="/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5_hu383dd86c8eea783eeb5619e5c624454b_1259521_480x0_resize_box_3.png 480w, /p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5_hu383dd86c8eea783eeb5619e5c624454b_1259521_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="alt text"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="299"
+		data-flex-basis="717px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Oct 19, 2024 22:30 CST
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/_hu1c7f7f6d3e56642cafe1f4e912a06462_1965906_4b562959d5dbc7800022a918375f300a.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 个人博客搭建"
+                        
+                        data-hash="md5-CWsSw6LMo9u2aZq2WvjQpw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">个人博客搭建</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 乌鸦的记录博客
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
