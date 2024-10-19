@@ -40,14 +40,6 @@
         <description></description>
         </item>
         <item>
-        <title>Python</title>
-        <link>https://a-b-ab.github.io/categories/python/</link>
-        <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://a-b-ab.github.io/categories/python/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>编程</title>
         <link>https://a-b-ab.github.io/categories/%E7%BC%96%E7%A8%8B/</link>
         <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
@@ -110,6 +102,14 @@
         
         <guid>https://a-b-ab.github.io/categories/%E5%B7%A5%E5%85%B7/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>Python</title>
+        <link>https://a-b-ab.github.io/categories/python/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://a-b-ab.github.io/categories/python/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/categories/python/4c31b5f65824359ab4a7375ed5964f029cc62a631e39c9-tj8Obq_fw1200webp.webp" alt="Featured image of post Python" /&gt;</description>
         </item>
         <item>
         <title>Test</title>

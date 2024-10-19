@@ -2363,7 +2363,7 @@ maxclients 的默认值是 10000，你也可以在 redis.conf 中对这个值进
         <pubDate>Tue, 30 Apr 2024 00:00:00 +0000</pubDate>
         
         <guid>https://a-b-ab.github.io/p/ruia%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="https://a-b-ab.github.io/p/ruia%E7%AC%94%E8%AE%B0/f5fe3c72432cf9bace81d3d424f1a6a5.jpg" alt="Featured image of post Ruia笔记" /&gt;&lt;h1 id=&#34;快速开始&#34;&gt;快速开始
+        <description>&lt;img src="https://a-b-ab.github.io/p/ruia%E7%AC%94%E8%AE%B0/Picgo202403181915672.jpeg" alt="Featured image of post Ruia笔记" /&gt;&lt;h1 id=&#34;快速开始&#34;&gt;快速开始
 &lt;/h1&gt;&lt;p&gt;基于Ruia快速实现一个以Hacker News为目标的爬虫
 本文主要通过对hacker News的爬取示例来展示如何使用ruia。&lt;/p&gt;
 &lt;h2 id=&#34;第一步定义item&#34;&gt;第一步：定义item

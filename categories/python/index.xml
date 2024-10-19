@@ -6,8 +6,7 @@
         <description>Recent content in Python on 乌鸦</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Sat, 05 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>乌鸦的记录博客</copyright><atom:link href="https://a-b-ab.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Python笔记(廖雪峰)</title>
         <link>https://a-b-ab.github.io/p/python%E7%AC%94%E8%AE%B0%E5%BB%96%E9%9B%AA%E5%B3%B0/</link>
         <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
@@ -1925,7 +1924,7 @@ class的方法名称与函数绑定，这里我们把函数fn绑定到方法名h
         <pubDate>Tue, 30 Apr 2024 00:00:00 +0000</pubDate>
         
         <guid>https://a-b-ab.github.io/p/ruia%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="https://a-b-ab.github.io/p/ruia%E7%AC%94%E8%AE%B0/f5fe3c72432cf9bace81d3d424f1a6a5.jpg" alt="Featured image of post Ruia笔记" /&gt;&lt;h1 id=&#34;快速开始&#34;&gt;快速开始
+        <description>&lt;img src="https://a-b-ab.github.io/p/ruia%E7%AC%94%E8%AE%B0/Picgo202403181915672.jpeg" alt="Featured image of post Ruia笔记" /&gt;&lt;h1 id=&#34;快速开始&#34;&gt;快速开始
 &lt;/h1&gt;&lt;p&gt;基于Ruia快速实现一个以Hacker News为目标的爬虫
 本文主要通过对hacker News的爬取示例来展示如何使用ruia。&lt;/p&gt;
 &lt;h2 id=&#34;第一步定义item&#34;&gt;第一步：定义item
