@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="也已经一个人走了很远的路了">
+<title>Linux命令简略</title>
+
+<link rel='canonical' href='https://a-b-ab.github.io/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/'>
+
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Linux命令简略">
+<meta property='og:description' content="也已经一个人走了很远的路了">
+<meta property='og:url' content='https://a-b-ab.github.io/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/'>
+<meta property='og:site_name' content='乌鸦'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-10-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-10-18T00:00:00&#43;00:00'/><meta property='og:image' content='https://a-b-ab.github.io/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/92a192cfd865a37877f69c14707d073f0d5f0d2e2cd2f3-uVUe18.jpg' />
+<meta name="twitter:title" content="Linux命令简略">
+<meta name="twitter:description" content="也已经一个人走了很远的路了"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://a-b-ab.github.io/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/92a192cfd865a37877f69c14707d073f0d5f0d2e2cd2f3-uVUe18.jpg' />
+    <link rel="shortcut icon" href="/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hua7c6426d55aaa478c31955be28d7bc27_584920_300x0_resize_q75_box.jpg" width="300"
+                            height="363" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍔</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">乌鸦</a></h1>
+            <h2 class="site-description">所行皆坦途，所愿皆如期</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#帮助命令">帮助命令</a></li>
+    <li><a href="#文件和目录操作命令">文件和目录操作命令</a></li>
+    <li><a href="#查看文件及内容处理命令">查看文件及内容处理命令</a></li>
+    <li><a href="#文件压缩及解压缩命令">文件压缩及解压缩命令</a></li>
+    <li><a href="#信息显示命令">信息显示命令</a></li>
+    <li><a href="#搜索文件命令">搜索文件命令</a></li>
+    <li><a href="#用户管理命令">用户管理命令</a></li>
+    <li><a href="#基础网络操作命令">基础网络操作命令</a></li>
+    <li><a href="#深入网络操作命令">深入网络操作命令</a></li>
+    <li><a href="#有关磁盘与文件系统的命令">有关磁盘与文件系统的命令</a></li>
+    <li><a href="#系统权限及用户授权相关命令">系统权限及用户授权相关命令</a></li>
+    <li><a href="#查看系统用户登录信息的命令">查看系统用户登录信息的命令</a></li>
+    <li><a href="#内置命令及其它">内置命令及其它</a></li>
+    <li><a href="#系统管理与性能监视命令">系统管理与性能监视命令</a></li>
+    <li><a href="#关机重启注销和查看系统信息的命令">关机/重启/注销和查看系统信息的命令</a></li>
+    <li><a href="#进程管理相关命令">进程管理相关命令</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/">
+                <img src="/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/92a192cfd865a37877f69c14707d073f0d5f0d2e2cd2f3-uVUe18_hua1015fee6750167c8d18a12ae10b99e3_2937587_800x0_resize_q75_box.jpg"
+                        srcset="/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/92a192cfd865a37877f69c14707d073f0d5f0d2e2cd2f3-uVUe18_hua1015fee6750167c8d18a12ae10b99e3_2937587_800x0_resize_q75_box.jpg 800w, /p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/92a192cfd865a37877f69c14707d073f0d5f0d2e2cd2f3-uVUe18_hua1015fee6750167c8d18a12ae10b99e3_2937587_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post Linux命令简略" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/linux/" >
+                Linux
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/">Linux命令简略</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            也已经一个人走了很远的路了
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-10-18</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="linux-常用命令">Linux 常用命令
+</h1><h2 id="帮助命令">帮助命令
+</h2><ul>
+<li><code>man</code>:查看命令帮助</li>
+<li><code>help</code>:查看Linux内置命令</li>
+</ul>
+<h2 id="文件和目录操作命令">文件和目录操作命令
+</h2><ul>
+<li><code>ls</code>:列出目录的内容及其内容属性信息</li>
+<li><code>cd</code>:从当前工作目录切换到指定的工作目录</li>
+<li><code>cp</code>:复制文件或目录</li>
+<li><code>find</code>:查找目录及目录下的文件</li>
+<li><code>mkdir</code>:创建目录</li>
+<li><code>mv</code>:移动或重命名文件</li>
+<li><code>pwd</code>:显示当前工作目录的绝对路径</li>
+<li><code>rename</code>:用于重命名文件</li>
+<li><code>rm</code>:删除一个或多个文件或目录</li>
+<li><code>rmdir</code>:删除空目录</li>
+<li><code>touch</code>:创建新的空文件，改变已有文件的时间戳属性</li>
+<li><code>tree</code>:以树形结构显示目录下的内容</li>
+<li><code>basename</code>:显示文件名或目录名</li>
+<li><code>dirname</code>:显示文件或目录路径</li>
+<li><code>chattr</code>:改变文件的扩展属性</li>
+<li><code>lsattr</code>:查看文件的扩展属性</li>
+<li><code>file</code>:显示文件的类型</li>
+<li><code>md5sum</code>:计算和校验文件的MD5值</li>
+</ul>
+<h2 id="查看文件及内容处理命令">查看文件及内容处理命令
+</h2><ul>
+<li><code>cat</code>:用于连接多个文件并且打印到屏幕输出或重定向到指定文件中</li>
+<li><code>tac</code>:反向显示文件内容</li>
+<li><code>more</code>:分页显示文件内容</li>
+<li><code>less</code>:分页显示文件内容，<code>more</code>的相反用法</li>
+<li><code>head</code>:显示文件内容的头部</li>
+<li><code>tail</code>:显示文件内容的尾部</li>
+<li><code>cut</code>:将文件的每一行按指定分隔符分割并输出</li>
+<li><code>split</code>:分割文件为不同的小片段</li>
+<li><code>paste</code>:按行合并文件内容</li>
+<li><code>sort</code>:对文件的文本内容排序</li>
+<li><code>uniq</code>:去除重复行</li>
+<li><code>wc</code>:统计文件的行数，单词数或字节数</li>
+<li><code>iconv</code>:转换文件的编码格式</li>
+<li><code>dos2unix</code>:将DOS格式文件转换成UNIX格式</li>
+<li><code>diff</code>: 比较文件的差异</li>
+<li><code>vimdiff</code>:命令行可视化文件比较工具</li>
+<li><code>rev</code>:反向输出文件内容</li>
+<li><code>grep/egrep</code>:过滤字符串</li>
+<li><code>join</code>:按两个文件的相同字段合并</li>
+<li><code>tr</code>:替换或删除字符</li>
+<li><code>vi/vim</code>:命令行文本编辑器</li>
+</ul>
+<h2 id="文件压缩及解压缩命令">文件压缩及解压缩命令
+</h2><ul>
+<li><code>tar</code>:打包压缩</li>
+<li><code>unzip</code>:解压文件</li>
+<li><code>gzip</code>:<code>gzip</code>压缩工具</li>
+<li><code>zip</code>:压缩工具</li>
+</ul>
+<h2 id="信息显示命令">信息显示命令
+</h2><ul>
+<li><code>uname</code>:显示操作系统相关信息的命令</li>
+<li><code>hostname</code>:显示或者设置当前系统的主机名</li>
+<li><code>dmesg</code>:显示开机信息，用于诊断系统故障</li>
+<li><code>uptime</code>:显示系统运行时间及负载</li>
+<li><code>stat</code>:显示文件或文件系统的状态</li>
+<li><code>du</code>:计算磁盘空间使用情况</li>
+<li><code>df</code>:报告文件系统磁盘空间的使用情况</li>
+<li><code>top</code>:实时显示系统资源使用情况</li>
+<li><code>free</code>:查看系统内存</li>
+<li><code>date</code>:显示与设置系统时间</li>
+<li><code>cal</code>:查看日历等时间信息</li>
+</ul>
+<h2 id="搜索文件命令">搜索文件命令
+</h2><ul>
+<li><code>which</code>:查找二进制命令，按环境变量PATH路径查找</li>
+<li><code>find</code>:从磁盘遍历文件或目录</li>
+<li><code>whereis</code>:查找二进制命令，按环境变量PATH路径查找</li>
+<li><code>locate</code>:从数据库查找命令，使用<code>update</code>更新库</li>
+</ul>
+<h2 id="用户管理命令">用户管理命令
+</h2><ul>
+<li><code>useradd</code>:添加用户</li>
+<li><code>usermod</code>:修改系统已经存在的用户属性</li>
+<li><code>userdel</code>:删除用户</li>
+<li><code>groupadd</code>:添加用户组</li>
+<li><code>passwd</code>:修改用户密码</li>
+<li><code>change</code>:修改用户密码有效期限</li>
+<li><code>id</code>:查看用户的<code>uid</code>，<code>gid</code>及归属的用户组</li>
+<li><code>su</code>:切换用户身份</li>
+<li><code>visudo</code>:编辑/etc/sudoers 文件的专属命令</li>
+<li><code>sudo</code>:以另一个用户身份(默认root用户)执行事先在<code>sudoers</code>文件允许的命令</li>
+</ul>
+<h2 id="基础网络操作命令">基础网络操作命令
+</h2><ul>
+<li><code>telnet</code>:使用<code>TELNET</code> 协议远程登录</li>
+<li><code>ssh</code>:使用<code>SSH</code>加密协议远程登录</li>
+<li><code>scp</code>:用于不同主机之间复制文件</li>
+<li><code>wget</code>:命令行下载文件</li>
+<li><code>ping</code>:测试主机之间网络的连通性</li>
+<li><code>route</code>:显示和设置<code>linux</code>系统的路由表</li>
+<li><code>ifconfig</code>:查看，配置，启用或禁用网络接口的命令</li>
+<li><code>ifup</code>:启动网卡</li>
+<li><code>ifdown</code>:关闭网卡</li>
+<li><code>netstat</code>:查看网络状态</li>
+<li><code>ss</code>:查看网络状态</li>
+</ul>
+<h2 id="深入网络操作命令">深入网络操作命令
+</h2><ul>
+<li><code>nmap</code>:网络扫描命令</li>
+<li><code>lsof</code>:列举系统中已经被打开的文件</li>
+<li><code>mail</code>:发送和接收邮件</li>
+<li><code>mutt</code>:邮件管理命令</li>
+<li><code>nslookup</code>:交互式查询互联网<code>DNS</code>服务器命令</li>
+<li><code>dig</code>:查找<code>DNS</code>解析过程</li>
+<li><code>host</code>:查询<code>DNS</code>的命令</li>
+<li><code>traceroute</code>:追踪数据传输路由状况</li>
+<li><code>tcpdump</code>:命令行的抓包工具</li>
+</ul>
+<h2 id="有关磁盘与文件系统的命令">有关磁盘与文件系统的命令
+</h2><ul>
+<li><code>mount</code>:挂载文件系统</li>
+<li><code>umount</code>:卸载文件系统</li>
+<li><code>fsck</code>:检查并修复<code>Linux</code>文件系统</li>
+<li><code>dd</code>:转换或复制文件</li>
+<li><code>dumpe2fs</code>:导出<code>ext2/ext3/ext4</code>文件系统信息</li>
+<li><code>dump</code>:<code>ext2/3/4</code>文件系统备份工具</li>
+<li><code>fdisk</code>:磁盘分区命令，适用于2TB以下磁盘分区</li>
+<li><code>parted</code>:磁盘分区命令，没有磁盘大小限制，常用于2TB以下磁盘分区</li>
+<li><code>mkfs</code>:格式化创建<code>Linux</code>文件系统</li>
+<li><code>partprobe</code>:更新内核的硬盘分区表信息</li>
+<li><code>e2fsck</code>:检查<code>ext2/ext3/ext4</code>类型文件系统</li>
+<li><code>mkswap</code>:创建<code>linux</code>交换分区</li>
+<li><code>swapon</code>:启用交换分区</li>
+<li><code>swqpoff</code>:关闭交换分区</li>
+<li><code>sync</code>:将内存缓冲区的数据写入磁盘</li>
+<li><code>resize2fs</code>:调整<code>ext2/ext3/ext4</code>文件系统大小</li>
+</ul>
+<h2 id="系统权限及用户授权相关命令">系统权限及用户授权相关命令
+</h2><ul>
+<li><code>chmod</code>:改变文件或目录权限</li>
+<li><code>chown</code>:改变文件或目录的属主和属组</li>
+<li><code>chgrp</code>:更改文件用户组</li>
+<li><code>umask</code>:显示或设置权限掩码</li>
+</ul>
+<h2 id="查看系统用户登录信息的命令">查看系统用户登录信息的命令
+</h2><ul>
+<li><code>whoami</code>:显示当前有效的用户名称，相当于执行<code>id -un</code>命令</li>
+<li><code>who</code>:显示目前登录系统的用户信息</li>
+<li><code>w</code>:显示已经登录系统的用户列表，并显示用户正在执行的指令</li>
+<li><code>last</code>:显示登入系统的用户</li>
+<li><code>lastlog</code>:显示系统中所有用户最近一次登录信息</li>
+<li><code>users</code>:显示当前登录系统的所有用户的用户列表</li>
+<li><code>finger</code>:查找并显示用户信息</li>
+</ul>
+<h2 id="内置命令及其它">内置命令及其它
+</h2><ul>
+<li><code>echo</code>:打印变量，或直接输出指定的字符串</li>
+<li><code>printf</code>:将结果格式化输出到标准输出</li>
+<li><code>rpm</code>:管理<code>rpm</code>包的命令</li>
+<li><code>yum</code>:自动化简单化管理<code>rpm</code>包的命令</li>
+<li><code>watch</code>:周期性的执行给定的命令，并将命令的输出以全屏方式显示</li>
+<li><code>alias</code>:设置系统别名</li>
+<li><code>unalias</code>:取消系统别名</li>
+<li><code>date</code>:查看或设置系统时间</li>
+<li><code>clear</code>:清屏</li>
+<li><code>history</code>:查看命令执行的历史记录</li>
+<li><code>eject</code>:弹出光驱</li>
+<li><code>time</code>:计算命令执行时间</li>
+<li><code>nc</code>:功能强大的网络工具</li>
+<li><code>xargs</code>:将标准输入转换成命令行参数</li>
+<li><code>exec</code>:调用并执行指令的命令</li>
+<li><code>export</code>:设置或显示环境变量</li>
+<li><code>unset</code>:删除变量或函数</li>
+<li><code>type</code>:用于判断另外一个命令是否是内置命令</li>
+<li><code>bc</code>:命令行科学计算器</li>
+</ul>
+<h2 id="系统管理与性能监视命令">系统管理与性能监视命令
+</h2><ul>
+<li><code>chkconfig</code>:管理<code>linux</code>系统开机启动项</li>
+<li><code>vmstat</code>:虚拟内存统计</li>
+<li><code>mpstat</code>:显示各个可用<code>CPU</code>的状态统计</li>
+<li><code>iostat</code>:统计系统<code>IO</code></li>
+<li><code>sqr</code>:全面获取系统的<code>CPU</code>，运行队列，磁盘I/O，分页(交换区)，内存，CPU中断和网络等性能数据</li>
+<li><code>ipcs</code>:用于报告<code>linux</code>中进程间通信设施的状态，显示的信息包括消息列表，共享内存和信号量的信息</li>
+<li><code>ipcrm</code>:用来删除一个或更多的消息队列，信号量或者共享内存标识</li>
+<li><code>strace</code>:用于诊断，调试<code>linux</code>用户空间跟踪器，我们用它来监控用户空间进程和内核的交互，比如系统调用，信号传递，进程状态变更等</li>
+<li><code>ltrace</code>:命令会跟踪进程的库函数调用，它会显现出那个库函数被调用</li>
+</ul>
+<h2 id="关机重启注销和查看系统信息的命令">关机/重启/注销和查看系统信息的命令
+</h2><ul>
+<li><code>shutdown</code>:关机</li>
+<li><code>halt</code>:关机</li>
+<li><code>poweroff</code>:关闭电源</li>
+<li><code>logout</code>:退出当前登录的<code>Shell</code></li>
+<li><code>exit</code>:退出当前登录的<code>Shell</code></li>
+<li><code>Ctrl+d</code>:退出当前登录的<code>Shell</code>的快捷键</li>
+</ul>
+<h2 id="进程管理相关命令">进程管理相关命令
+</h2><ul>
+<li><code>bg</code>:将一个在后台暂停的命令，变成继续执行(在后台执行)</li>
+<li><code>fg</code>:将后台中的命令调至前台继续执行</li>
+<li><code>jobs</code>:查看当前有多少在后台运行的命令</li>
+<li><code>kill</code>:终止进程</li>
+<li><code>killall</code>:通过进程名终止进程</li>
+<li><code>pkill</code>:通过进程名终止进程</li>
+<li><code>crontab</code>:定时任务命令</li>
+<li><code>ps</code>:显示进程的快照</li>
+<li><code>pstree</code>:树形显示进程</li>
+<li><code>nice/renice</code>:调整程序运行的优先级</li>
+<li><code>nohup</code>:忽略挂起信号运行指定的命令</li>
+<li><code>pgrep</code>:查找匹配条件的进程</li>
+<li><code>runlevel</code>:查看系统当前运行级别</li>
+<li><code>init</code>:切换运行级别</li>
+<li><code>service</code>:启动，停止，重新启动和关闭系统服务，还可以显示所有系统服务的当前状态</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/">
+        
+        
+            <div class="article-image">
+                <img src="/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/_hu787b0e61590c825174742ce250fd0c32_3527535_82fe7f91f74480b81c8e5dff94f6c08b.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Linux&#43;Win双系统"
+                        
+                        data-hash="md5-FspAUNJOtm&#43;Gk5S&#43;e4nNzA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Linux&#43;Win双系统</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 乌鸦
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

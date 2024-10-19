@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Linux on 乌鸦</title>
+        <link>https://a-b-ab.github.io/categories/linux/</link>
+        <description>Recent content in Linux on 乌鸦</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>乌鸦</copyright>
+        <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Linux命令简略</title>
+        <link>https://a-b-ab.github.io/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/</link>
+        <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://a-b-ab.github.io/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/linux%E5%91%BD%E4%BB%A4%E7%AE%80%E7%95%A5/92a192cfd865a37877f69c14707d073f0d5f0d2e2cd2f3-uVUe18.jpg" alt="Featured image of post Linux命令简略" /&gt;&lt;h1 id=&#34;linux-常用命令&#34;&gt;Linux 常用命令
+&lt;/h1&gt;&lt;h2 id=&#34;帮助命令&#34;&gt;帮助命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;man&lt;/code&gt;:查看命令帮助&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;help&lt;/code&gt;:查看Linux内置命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文件和目录操作命令&#34;&gt;文件和目录操作命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ls&lt;/code&gt;:列出目录的内容及其内容属性信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd&lt;/code&gt;:从当前工作目录切换到指定的工作目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cp&lt;/code&gt;:复制文件或目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find&lt;/code&gt;:查找目录及目录下的文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdir&lt;/code&gt;:创建目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mv&lt;/code&gt;:移动或重命名文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pwd&lt;/code&gt;:显示当前工作目录的绝对路径&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rename&lt;/code&gt;:用于重命名文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rm&lt;/code&gt;:删除一个或多个文件或目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rmdir&lt;/code&gt;:删除空目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;touch&lt;/code&gt;:创建新的空文件，改变已有文件的时间戳属性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tree&lt;/code&gt;:以树形结构显示目录下的内容&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;basename&lt;/code&gt;:显示文件名或目录名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dirname&lt;/code&gt;:显示文件或目录路径&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;chattr&lt;/code&gt;:改变文件的扩展属性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lsattr&lt;/code&gt;:查看文件的扩展属性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;file&lt;/code&gt;:显示文件的类型&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;md5sum&lt;/code&gt;:计算和校验文件的MD5值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;查看文件及内容处理命令&#34;&gt;查看文件及内容处理命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat&lt;/code&gt;:用于连接多个文件并且打印到屏幕输出或重定向到指定文件中&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tac&lt;/code&gt;:反向显示文件内容&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;more&lt;/code&gt;:分页显示文件内容&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;less&lt;/code&gt;:分页显示文件内容，&lt;code&gt;more&lt;/code&gt;的相反用法&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;head&lt;/code&gt;:显示文件内容的头部&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tail&lt;/code&gt;:显示文件内容的尾部&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cut&lt;/code&gt;:将文件的每一行按指定分隔符分割并输出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;split&lt;/code&gt;:分割文件为不同的小片段&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;paste&lt;/code&gt;:按行合并文件内容&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sort&lt;/code&gt;:对文件的文本内容排序&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uniq&lt;/code&gt;:去除重复行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wc&lt;/code&gt;:统计文件的行数，单词数或字节数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;iconv&lt;/code&gt;:转换文件的编码格式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dos2unix&lt;/code&gt;:将DOS格式文件转换成UNIX格式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;diff&lt;/code&gt;: 比较文件的差异&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vimdiff&lt;/code&gt;:命令行可视化文件比较工具&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rev&lt;/code&gt;:反向输出文件内容&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grep/egrep&lt;/code&gt;:过滤字符串&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;join&lt;/code&gt;:按两个文件的相同字段合并&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tr&lt;/code&gt;:替换或删除字符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vi/vim&lt;/code&gt;:命令行文本编辑器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文件压缩及解压缩命令&#34;&gt;文件压缩及解压缩命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tar&lt;/code&gt;:打包压缩&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unzip&lt;/code&gt;:解压文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gzip&lt;/code&gt;:&lt;code&gt;gzip&lt;/code&gt;压缩工具&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zip&lt;/code&gt;:压缩工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;信息显示命令&#34;&gt;信息显示命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;uname&lt;/code&gt;:显示操作系统相关信息的命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hostname&lt;/code&gt;:显示或者设置当前系统的主机名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dmesg&lt;/code&gt;:显示开机信息，用于诊断系统故障&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uptime&lt;/code&gt;:显示系统运行时间及负载&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stat&lt;/code&gt;:显示文件或文件系统的状态&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;du&lt;/code&gt;:计算磁盘空间使用情况&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;df&lt;/code&gt;:报告文件系统磁盘空间的使用情况&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;top&lt;/code&gt;:实时显示系统资源使用情况&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;free&lt;/code&gt;:查看系统内存&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date&lt;/code&gt;:显示与设置系统时间&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cal&lt;/code&gt;:查看日历等时间信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;搜索文件命令&#34;&gt;搜索文件命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;which&lt;/code&gt;:查找二进制命令，按环境变量PATH路径查找&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find&lt;/code&gt;:从磁盘遍历文件或目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;whereis&lt;/code&gt;:查找二进制命令，按环境变量PATH路径查找&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;locate&lt;/code&gt;:从数据库查找命令，使用&lt;code&gt;update&lt;/code&gt;更新库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;用户管理命令&#34;&gt;用户管理命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;useradd&lt;/code&gt;:添加用户&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;usermod&lt;/code&gt;:修改系统已经存在的用户属性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;userdel&lt;/code&gt;:删除用户&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groupadd&lt;/code&gt;:添加用户组&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;passwd&lt;/code&gt;:修改用户密码&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;change&lt;/code&gt;:修改用户密码有效期限&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;id&lt;/code&gt;:查看用户的&lt;code&gt;uid&lt;/code&gt;，&lt;code&gt;gid&lt;/code&gt;及归属的用户组&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;su&lt;/code&gt;:切换用户身份&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;visudo&lt;/code&gt;:编辑/etc/sudoers 文件的专属命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo&lt;/code&gt;:以另一个用户身份(默认root用户)执行事先在&lt;code&gt;sudoers&lt;/code&gt;文件允许的命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;基础网络操作命令&#34;&gt;基础网络操作命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;telnet&lt;/code&gt;:使用&lt;code&gt;TELNET&lt;/code&gt; 协议远程登录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ssh&lt;/code&gt;:使用&lt;code&gt;SSH&lt;/code&gt;加密协议远程登录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scp&lt;/code&gt;:用于不同主机之间复制文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wget&lt;/code&gt;:命令行下载文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ping&lt;/code&gt;:测试主机之间网络的连通性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;route&lt;/code&gt;:显示和设置&lt;code&gt;linux&lt;/code&gt;系统的路由表&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ifconfig&lt;/code&gt;:查看，配置，启用或禁用网络接口的命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ifup&lt;/code&gt;:启动网卡&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ifdown&lt;/code&gt;:关闭网卡&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;netstat&lt;/code&gt;:查看网络状态&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ss&lt;/code&gt;:查看网络状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;深入网络操作命令&#34;&gt;深入网络操作命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;nmap&lt;/code&gt;:网络扫描命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lsof&lt;/code&gt;:列举系统中已经被打开的文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mail&lt;/code&gt;:发送和接收邮件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mutt&lt;/code&gt;:邮件管理命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nslookup&lt;/code&gt;:交互式查询互联网&lt;code&gt;DNS&lt;/code&gt;服务器命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dig&lt;/code&gt;:查找&lt;code&gt;DNS&lt;/code&gt;解析过程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;host&lt;/code&gt;:查询&lt;code&gt;DNS&lt;/code&gt;的命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;traceroute&lt;/code&gt;:追踪数据传输路由状况&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tcpdump&lt;/code&gt;:命令行的抓包工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;有关磁盘与文件系统的命令&#34;&gt;有关磁盘与文件系统的命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mount&lt;/code&gt;:挂载文件系统&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;umount&lt;/code&gt;:卸载文件系统&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fsck&lt;/code&gt;:检查并修复&lt;code&gt;Linux&lt;/code&gt;文件系统&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dd&lt;/code&gt;:转换或复制文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dumpe2fs&lt;/code&gt;:导出&lt;code&gt;ext2/ext3/ext4&lt;/code&gt;文件系统信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dump&lt;/code&gt;:&lt;code&gt;ext2/3/4&lt;/code&gt;文件系统备份工具&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fdisk&lt;/code&gt;:磁盘分区命令，适用于2TB以下磁盘分区&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parted&lt;/code&gt;:磁盘分区命令，没有磁盘大小限制，常用于2TB以下磁盘分区&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkfs&lt;/code&gt;:格式化创建&lt;code&gt;Linux&lt;/code&gt;文件系统&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;partprobe&lt;/code&gt;:更新内核的硬盘分区表信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;e2fsck&lt;/code&gt;:检查&lt;code&gt;ext2/ext3/ext4&lt;/code&gt;类型文件系统&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkswap&lt;/code&gt;:创建&lt;code&gt;linux&lt;/code&gt;交换分区&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;swapon&lt;/code&gt;:启用交换分区&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;swqpoff&lt;/code&gt;:关闭交换分区&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sync&lt;/code&gt;:将内存缓冲区的数据写入磁盘&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;resize2fs&lt;/code&gt;:调整&lt;code&gt;ext2/ext3/ext4&lt;/code&gt;文件系统大小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;系统权限及用户授权相关命令&#34;&gt;系统权限及用户授权相关命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;chmod&lt;/code&gt;:改变文件或目录权限&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;chown&lt;/code&gt;:改变文件或目录的属主和属组&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;chgrp&lt;/code&gt;:更改文件用户组&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;umask&lt;/code&gt;:显示或设置权限掩码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;查看系统用户登录信息的命令&#34;&gt;查看系统用户登录信息的命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;whoami&lt;/code&gt;:显示当前有效的用户名称，相当于执行&lt;code&gt;id -un&lt;/code&gt;命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;who&lt;/code&gt;:显示目前登录系统的用户信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;w&lt;/code&gt;:显示已经登录系统的用户列表，并显示用户正在执行的指令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;last&lt;/code&gt;:显示登入系统的用户&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lastlog&lt;/code&gt;:显示系统中所有用户最近一次登录信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;users&lt;/code&gt;:显示当前登录系统的所有用户的用户列表&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;finger&lt;/code&gt;:查找并显示用户信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;内置命令及其它&#34;&gt;内置命令及其它
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;echo&lt;/code&gt;:打印变量，或直接输出指定的字符串&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;printf&lt;/code&gt;:将结果格式化输出到标准输出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rpm&lt;/code&gt;:管理&lt;code&gt;rpm&lt;/code&gt;包的命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;yum&lt;/code&gt;:自动化简单化管理&lt;code&gt;rpm&lt;/code&gt;包的命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;watch&lt;/code&gt;:周期性的执行给定的命令，并将命令的输出以全屏方式显示&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;alias&lt;/code&gt;:设置系统别名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unalias&lt;/code&gt;:取消系统别名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date&lt;/code&gt;:查看或设置系统时间&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clear&lt;/code&gt;:清屏&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;history&lt;/code&gt;:查看命令执行的历史记录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eject&lt;/code&gt;:弹出光驱&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;time&lt;/code&gt;:计算命令执行时间&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nc&lt;/code&gt;:功能强大的网络工具&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xargs&lt;/code&gt;:将标准输入转换成命令行参数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;exec&lt;/code&gt;:调用并执行指令的命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;export&lt;/code&gt;:设置或显示环境变量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unset&lt;/code&gt;:删除变量或函数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;type&lt;/code&gt;:用于判断另外一个命令是否是内置命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bc&lt;/code&gt;:命令行科学计算器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;系统管理与性能监视命令&#34;&gt;系统管理与性能监视命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;chkconfig&lt;/code&gt;:管理&lt;code&gt;linux&lt;/code&gt;系统开机启动项&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vmstat&lt;/code&gt;:虚拟内存统计&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mpstat&lt;/code&gt;:显示各个可用&lt;code&gt;CPU&lt;/code&gt;的状态统计&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;iostat&lt;/code&gt;:统计系统&lt;code&gt;IO&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sqr&lt;/code&gt;:全面获取系统的&lt;code&gt;CPU&lt;/code&gt;，运行队列，磁盘I/O，分页(交换区)，内存，CPU中断和网络等性能数据&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ipcs&lt;/code&gt;:用于报告&lt;code&gt;linux&lt;/code&gt;中进程间通信设施的状态，显示的信息包括消息列表，共享内存和信号量的信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ipcrm&lt;/code&gt;:用来删除一个或更多的消息队列，信号量或者共享内存标识&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;strace&lt;/code&gt;:用于诊断，调试&lt;code&gt;linux&lt;/code&gt;用户空间跟踪器，我们用它来监控用户空间进程和内核的交互，比如系统调用，信号传递，进程状态变更等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ltrace&lt;/code&gt;:命令会跟踪进程的库函数调用，它会显现出那个库函数被调用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;关机重启注销和查看系统信息的命令&#34;&gt;关机/重启/注销和查看系统信息的命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;shutdown&lt;/code&gt;:关机&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;halt&lt;/code&gt;:关机&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;poweroff&lt;/code&gt;:关闭电源&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;logout&lt;/code&gt;:退出当前登录的&lt;code&gt;Shell&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;exit&lt;/code&gt;:退出当前登录的&lt;code&gt;Shell&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+d&lt;/code&gt;:退出当前登录的&lt;code&gt;Shell&lt;/code&gt;的快捷键&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;进程管理相关命令&#34;&gt;进程管理相关命令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bg&lt;/code&gt;:将一个在后台暂停的命令，变成继续执行(在后台执行)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fg&lt;/code&gt;:将后台中的命令调至前台继续执行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jobs&lt;/code&gt;:查看当前有多少在后台运行的命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;kill&lt;/code&gt;:终止进程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;killall&lt;/code&gt;:通过进程名终止进程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pkill&lt;/code&gt;:通过进程名终止进程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;crontab&lt;/code&gt;:定时任务命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ps&lt;/code&gt;:显示进程的快照&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pstree&lt;/code&gt;:树形显示进程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nice/renice&lt;/code&gt;:调整程序运行的优先级&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nohup&lt;/code&gt;:忽略挂起信号运行指定的命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pgrep&lt;/code&gt;:查找匹配条件的进程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;runlevel&lt;/code&gt;:查看系统当前运行级别&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;init&lt;/code&gt;:切换运行级别&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;service&lt;/code&gt;:启动，停止，重新启动和关闭系统服务，还可以显示所有系统服务的当前状态&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Linux&#43;Win双系统</title>
+        <link>https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/f5fe3c72432cf9bace81d3d424f1a6a5.jpg" alt="Featured image of post Linux&#43;Win双系统" /&gt;&lt;h1 id=&#34;window与linux双系统安装与卸载linux&#34;&gt;Window与Linux双系统安装与卸载Linux
+&lt;/h1&gt;&lt;p&gt;&lt;em&gt;如果你事先在&lt;code&gt;window&lt;/code&gt;上安装的&lt;code&gt;ubuntu&lt;/code&gt;,但是因为种种原因需要重装，那么你需要先卸载装在你电脑上的&lt;code&gt;ubuntu&lt;/code&gt;系统才能安装新的&lt;code&gt;Ubuntu&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;重装&lt;code&gt;unbuntu&lt;/code&gt;记得先保存好&lt;code&gt;ubuntu&lt;/code&gt;想保存的文件&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ubuntu卸载&#34;&gt;Ubuntu卸载
+&lt;/h2&gt;&lt;h3 id=&#34;删除ubuntu所在卷&#34;&gt;删除ubuntu所在卷
+&lt;/h3&gt;&lt;p&gt;进入&lt;code&gt;windows&lt;/code&gt;系统，&lt;strong&gt;右键此电脑-管理-磁盘管理-删除ubuntu所在的卷&lt;/strong&gt;，使这些区域成为“可用空间”&lt;/p&gt;
+&lt;h3 id=&#34;删除unbuntu-efi分区&#34;&gt;删除unbuntu EFI分区
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Win + R&lt;/code&gt; 输入cmd打开终端，输入 &lt;code&gt;diskpart&lt;/code&gt;进入磁盘工具&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;list disk&lt;/code&gt; 查看磁盘，输入 &lt;code&gt;select disk 1&lt;/code&gt; （我的Ubuntu EFI分区在磁盘1，根据自己的情况选择）&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;list partition&lt;/code&gt; ，输入 &lt;code&gt;select partition *&lt;/code&gt; （*为Ubuntu EFI分区号）&lt;/p&gt;
+&lt;h3 id=&#34;删除ubuntu系统启动项&#34;&gt;删除Ubuntu系统启动项
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Win + R&lt;/code&gt; 输入cmd打开终端，输入 &lt;code&gt;diskpart&lt;/code&gt; 进入磁盘工具&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;list disk&lt;/code&gt; 查看磁盘，输入 &lt;code&gt;select disk 1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;list partition&lt;/code&gt; ，输入 &lt;code&gt;select partition *&lt;/code&gt; （*为Windows EFI分区，一般为260M）&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;assign letter=J&lt;/code&gt;（分配盘符）&lt;/p&gt;
+&lt;p&gt;管理员模式打开记事本，记事本选择文件-打开-选中磁盘J&lt;/p&gt;
+&lt;p&gt;打开 &lt;code&gt;EFI&lt;/code&gt; 文件夹，删除Ubuntu文件夹&lt;/p&gt;
+&lt;p&gt;返回 &lt;code&gt;Distpart&lt;/code&gt; 界面，输入 &lt;code&gt;remove letter=J&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;删除时一定要看仔细，不如会导致很严重的后果&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;磁盘分区如果你是第一次装ubuntu&#34;&gt;磁盘分区（如果你是第一次装Ubuntu）
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;打开计算机管理&lt;/li&gt;
+&lt;li&gt;找到磁盘管理&lt;/li&gt;
+&lt;li&gt;选择你要压缩的盘，&lt;strong&gt;你压缩掉的空间将作为新系统的空间&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;右键打开你要压缩的盘符，点击压缩卷&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/Picgo202403182047551.png&#34;
+	width=&#34;1275&#34;
+	height=&#34;1439&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/Picgo202403182047551_hu5d2469ac2c3301bc098c2eb581dd4301_308560_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/Picgo202403182047551_hu5d2469ac2c3301bc098c2eb581dd4301_308560_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;all text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;88&#34;
+		data-flex-basis=&#34;212px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/Picgo202403182047587.png&#34;
+	width=&#34;1280&#34;
+	height=&#34;1439&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/Picgo202403182047587_hudd292d28d3c8616743d6c55941449f6d_256795_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/Picgo202403182047587_hudd292d28d3c8616743d6c55941449f6d_256795_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;all text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;88&#34;
+		data-flex-basis=&#34;213px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装ubuntu系统&#34;&gt;安装ubuntu系统
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;强烈建议安装最新lts版本，我写这篇博客时是22.04版&lt;/strong&gt;
+&lt;em&gt;我就是因为第一次装的是18.04版所以才重装的，QAQ&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;下载linux镜像&#34;&gt;下载Linux镜像
+&lt;/h3&gt;&lt;p&gt;1.下载 Ubuntu 镜像，这里可以去官方下载，但是官方在国外，默认外网链接可能网速有点小慢。（科技玩家例外）
+更好的选择是国内的资源镜像网站，比如说清华大学开源软件镜像站&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mirrors.tuna.tsinghua.edu.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;清华大学开源软件镜像站&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;准备u盘刻盘工具&#34;&gt;准备u盘刻盘工具
+&lt;/h3&gt;&lt;p&gt;我用的是&lt;code&gt;UltralSO&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;下载后打开，找到你下载的镜像文件，找到后，点击右上角的启动-&amp;gt;写入硬盘映像&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;写入时记得插入u盘，这个u盘将作为启动盘&lt;/em&gt;
+&lt;em&gt;写入时，这个u盘的数据全会被格式化，谨慎操作&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;然后点击写入就可以了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/Picgo202403182049794.png&#34;
+	width=&#34;1153&#34;
+	height=&#34;869&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/Picgo202403182049794_hu6f1a7d280f190b03fc9baada47b77734_261596_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/linux-win%E5%8F%8C%E7%B3%BB%E7%BB%9F/Picgo202403182049794_hu6f1a7d280f190b03fc9baada47b77734_261596_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;all text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;132&#34;
+		data-flex-basis=&#34;318px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;开机引导界面&#34;&gt;开机引导界面
+&lt;/h3&gt;&lt;p&gt;将写好的映像文件的U盘插入你需要的电脑，在开始时按f12，本人用的是联想，不同电脑可能不同，正常都是f12&lt;/p&gt;
+&lt;p&gt;在引导界面可以看到几个选项，选择你的u盘作为启动项，反正不是window和network就是了&lt;/p&gt;
+&lt;p&gt;启动后你会进入系统选择界面，使用方向键选择 ubuntu 后回车就进入了 Ubuntu 的安装引导界面。在侧边栏中选择系统语言，English、Chinese都可，看自己喜好，然后点击 Install Ubuntu 进入安装，选择安装方式，选择正常安装就行，会默认安装火狐浏览器等软件。或者选择最小安装的话可以在安装完成后自行安装需要的软件，两种方式影响不大。下面的安装第三方软件选项也可以选上，也可以不选，后面再根据需要手动安装。我这里就只选择了正常安装，然后点击继续，在安装类型选择时，建议自己手动分区，说一下分区情况吧，我找了大部分教程都是分为四个区：&lt;/p&gt;
+&lt;h4 id=&#34;分区方案&#34;&gt;分区方案
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;/boot : 1G（最好）  主分区。系统的boot启动引导项安装位置&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;/  : 随意（尽量大）    主分区。根目录，所有目录的根节点，其下包含很多子目录，如/usr  /tmp等&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;/home :  自定义（尽量大，一般最后分）   逻辑分区。一般放置自己的数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;swap : 16G   逻辑分区。交换空间，一般是物理内存的1~2倍就行了&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;具体操作，首先找到 free space 空间，如下，选中该空间，点击左下角的加号+，进行内存分配&lt;/p&gt;
+&lt;p&gt;安装后-&amp;gt;选择地区（上海或香港都可以，我选的是上海）-&amp;gt;设置账户密码-&amp;gt;重启-&amp;gt;输入密码，ok&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;我和同学在重启时都出现，黑屏跳一堆数据的情况，我们当时都很慌，但是我们最后强制关机重启后，发现没有大问题，起码我们没发现问题&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;以后你每次开机时都可以选择windo和Linux之一的系统进行启动&lt;/p&gt;
+&lt;h4 id=&#34;tip&#34;&gt;Tip
+&lt;/h4&gt;&lt;p&gt;安装后可能会出现很多问题，比如，Linux熄屏黑屏启动不了，这个是好像是显卡冲突问题，内置键盘输入不了等等&amp;hellip;&lt;/p&gt;
+&lt;p&gt;可以去网上找对应解决方法&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
