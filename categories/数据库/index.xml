@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>数据库 on 乌鸦</title>
-        <link>https://a-b-ab.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+        <link>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
         <description>Recent content in 数据库 on 乌鸦</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Redis笔记</title>
-        <link>https://a-b-ab.github.io/p/redis%E7%AC%94%E8%AE%B0/</link>
+        <link>http://localhost:1313/p/redis%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://a-b-ab.github.io/p/redis%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="https://a-b-ab.github.io/p/redis%E7%AC%94%E8%AE%B0/e0f12bb2ec86a77c779b904b79e29ca5.jpg" alt="Featured image of post Redis笔记" /&gt;&lt;h1 id=&#34;概述&#34;&gt;概述
+        <guid>http://localhost:1313/p/redis%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="http://localhost:1313/p/redis%E7%AC%94%E8%AE%B0/e0f12bb2ec86a77c779b904b79e29ca5.jpg" alt="Featured image of post Redis笔记" /&gt;&lt;h1 id=&#34;概述&#34;&gt;概述
 &lt;/h1&gt;&lt;p&gt;Redis 是一个开源的使用 ANSI C 语言编写、遵守 BSD 协议、支持网络、可基于内存、分布式、可选持久性的键值对(Key-Value)存储数据库，并提供多种语言的 API。&lt;/p&gt;
 &lt;p&gt;Redis（Remote Dictionary Server）是一个开源的内存数据库，遵守 BSD 协议，它提供了一个高性能的键值（key-value）存储系统，常用于缓存、消息队列、会话存储等应用场景。&lt;/p&gt;
 &lt;h1 id=&#34;数据结构&#34;&gt;数据结构
@@ -468,11 +468,11 @@ maxclients 的默认值是 10000，你也可以在 redis.conf 中对这个值进
         </item>
         <item>
         <title>MySQL简单命令</title>
-        <link>https://a-b-ab.github.io/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</link>
+        <link>http://localhost:1313/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</link>
         <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://a-b-ab.github.io/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</guid>
-        <description>&lt;img src="https://a-b-ab.github.io/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/8c8b581ab1cf8ea5e3aa00cfb897ea4e.jpg" alt="Featured image of post MySQL简单命令" /&gt;&lt;h1 id=&#34;mysql基本操作命令汇总&#34;&gt;MySQL基本操作命令汇总
+        <guid>http://localhost:1313/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</guid>
+        <description>&lt;img src="http://localhost:1313/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/8c8b581ab1cf8ea5e3aa00cfb897ea4e.jpg" alt="Featured image of post MySQL简单命令" /&gt;&lt;h1 id=&#34;mysql基本操作命令汇总&#34;&gt;MySQL基本操作命令汇总
 &lt;/h1&gt;&lt;h2 id=&#34;基本操作&#34;&gt;基本操作
 &lt;/h2&gt;&lt;p&gt;对数据库以及表的一些基本操作&lt;/p&gt;
 &lt;h3 id=&#34;关于数据库&#34;&gt;关于数据库

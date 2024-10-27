@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>软件 on 乌鸦</title>
-        <link>https://a-b-ab.github.io/categories/%E8%BD%AF%E4%BB%B6/</link>
+        <link>http://localhost:1313/categories/%E8%BD%AF%E4%BB%B6/</link>
         <description>Recent content in 软件 on 乌鸦</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Fri, 26 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 26 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Nginx笔记</title>
-        <link>https://a-b-ab.github.io/p/nginx%E7%AC%94%E8%AE%B0/</link>
+        <link>http://localhost:1313/p/nginx%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Fri, 26 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://a-b-ab.github.io/p/nginx%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="https://a-b-ab.github.io/p/nginx%E7%AC%94%E8%AE%B0/f48d72dbe89cb374fafa2450e23b0dc409e89c86.jpg" alt="Featured image of post Nginx笔记" /&gt;&lt;h1 id=&#34;nginx&#34;&gt;Nginx
+        <guid>http://localhost:1313/p/nginx%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="http://localhost:1313/p/nginx%E7%AC%94%E8%AE%B0/f48d72dbe89cb374fafa2450e23b0dc409e89c86.jpg" alt="Featured image of post Nginx笔记" /&gt;&lt;h1 id=&#34;nginx&#34;&gt;Nginx
 &lt;/h1&gt;&lt;p&gt;Nginx（发音为“engine X”）是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP代理服务器。它因其稳定性、丰富的功能集、简单的配置以及低资源消耗而广受欢迎。Nginx 的主要作用包括但不限于以下几个方面：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;

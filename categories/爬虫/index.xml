@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>爬虫 on 乌鸦</title>
-        <link>https://a-b-ab.github.io/categories/%E7%88%AC%E8%99%AB/</link>
+        <link>http://localhost:1313/categories/%E7%88%AC%E8%99%AB/</link>
         <description>Recent content in 爬虫 on 乌鸦</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>爬虫笔记</title>
-        <link>https://a-b-ab.github.io/p/%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0/</link>
+        <link>http://localhost:1313/p/%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://a-b-ab.github.io/p/%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="https://a-b-ab.github.io/p/%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0/0fb747771069b0a5bcb1e8a58d048259.jpg" alt="Featured image of post 爬虫笔记" /&gt;&lt;h1 id=&#34;爬虫基础&#34;&gt;爬虫基础
+        <guid>http://localhost:1313/p/%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0/0fb747771069b0a5bcb1e8a58d048259.jpg" alt="Featured image of post 爬虫笔记" /&gt;&lt;h1 id=&#34;爬虫基础&#34;&gt;爬虫基础
 &lt;/h1&gt;&lt;p&gt;&lt;strong&gt;“可见即可爬~”&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;爬虫概念&#34;&gt;爬虫概念
 &lt;/h2&gt;&lt;p&gt;如果互联网是一张大的蜘蛛网，那一台计算机上的数据便是蜘蛛网上的一个猎物，而爬虫程序就是一只小蜘蛛，沿着蜘蛛网抓取自己想要的猎物/数据&lt;/p&gt;
