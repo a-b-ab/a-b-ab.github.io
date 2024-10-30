@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="山不让尘，川不辞盈">
+<title>缓存面试</title>
+
+<link rel='canonical' href='http://localhost:1313/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/'>
+
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="缓存面试">
+<meta property='og:description' content="山不让尘，川不辞盈">
+<meta property='og:url' content='http://localhost:1313/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/'>
+<meta property='og:site_name' content='乌鸦'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-10-28T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-10-30T14:49:21&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/bde24615776e497ac96491a690a2dbe94932a7ce1b9eb5-A6LFaJ.jpg' />
+<meta name="twitter:title" content="缓存面试">
+<meta name="twitter:description" content="山不让尘，川不辞盈"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/bde24615776e497ac96491a690a2dbe94932a7ce1b9eb5-A6LFaJ.jpg' />
+    <link rel="shortcut icon" href="/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hua7c6426d55aaa478c31955be28d7bc27_584920_300x0_resize_q75_box.jpg" width="300"
+                            height="363" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍔</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">乌鸦</a></h1>
+            <h2 class="site-description">所行皆坦途，所愿皆如期</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#缓存穿透">缓存穿透</a></li>
+    <li><a href="#缓存击穿">缓存击穿</a></li>
+    <li><a href="#缓存雪崩">缓存雪崩</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/">
+                <img src="/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/bde24615776e497ac96491a690a2dbe94932a7ce1b9eb5-A6LFaJ_huba2e2cae59d3d791bdf96efa52fa59e3_1810101_800x0_resize_q75_box.jpg"
+                        srcset="/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/bde24615776e497ac96491a690a2dbe94932a7ce1b9eb5-A6LFaJ_huba2e2cae59d3d791bdf96efa52fa59e3_1810101_800x0_resize_q75_box.jpg 800w, /p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/bde24615776e497ac96491a690a2dbe94932a7ce1b9eb5-A6LFaJ_huba2e2cae59d3d791bdf96efa52fa59e3_1810101_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="701" 
+                        loading="lazy"
+                        alt="Featured image of post 缓存面试" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%9F%A5%E8%AF%86/" >
+                知识
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/">缓存面试</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            山不让尘，川不辞盈
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-10-28</time>
+            </div>
+        
+
+        <div class="article-lastmod">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time>
+                    Oct 30, 2024 14:49 CST
+                </time>
+            </div>
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="为什么使用缓存">为什么使用缓存
+</h1><ol>
+<li>
+<p>在程序内部使用缓存，比如使用map等数据结构作为内部缓存，可以快速获取对象。通过将经常使用的数据存储在缓存中，可以减少对数据库的频繁访问，从而提高系统的响应速度和性能。缓存可以将数据保存在内存中，读取速度更快，能够大大缩短数据访问的时间，提升用户体验。</p>
+</li>
+<li>
+<p>在业界中，通常在数据库之前添加一层Redis缓存，这样可以避免数据库的性能被大量的请求耗费。当有大量的并发请求时，数据库可能会成为瓶颈，而使用缓存可以有效地缓解数据库的压力。Redis作为一种高效的缓存解决方案，可以将热门数据存储在内存中，以快速响应用户的请求。这种缓存层的引入不仅可以提高系统的性能和吞吐量，还可以提高系统的可靠性和稳定性，因为即使数据库出现故障，缓存仍然可以提供部分服务。</p>
+</li>
+<li>
+<p>缓存还可以减少网络传输的负载，特别是在分布式系统中。通过将计算结果或频繁访问的数据缓存起来，可以避免重复计算和重复访问数据库，节省了网络带宽和服务器的资源消耗。这对于海量数据的查找和计算密集型任务尤为重要，可以大大提升系统的效率和可扩展性。</p>
+</li>
+</ol>
+<p>总之，使用缓存可以优化系统的性能、提高响应速度、降低数据库负载、节省网络传输和服务器资源，从而提升用户体验和系统的可靠性。</p>
+<h1 id="缓存穿透击穿雪崩">缓存穿透，击穿，雪崩
+</h1><h2 id="缓存穿透">缓存穿透
+</h2><p>缓存穿透指的是当一个请求查询的数据不在缓存中，也不在数据库中，导致每次请求都直接访问数据库，增加了数据库的负载。这可能是由于恶意攻击或者异常情况导致的。为了解决缓存穿透问题，可以采取以下措施</p>
+<ul>
+<li>在缓存中存储一个空值或者默认值，且设置成一定过期时间，以避免重复的无效查询，但是这种方案有缺陷就是redis会多出无用的key，浪费内存资源；</li>
+<li>使用布隆过滤器等技术来过滤掉无效的请求，将可能不存在的数据快速过滤掉，布隆过滤器可以有效防止不存在的key进入业务调用数据库，但是需要提前将数据库数据预热到布隆过滤器中，并且他也有一种缺陷就是由于他的数据结构和算法导致无法删除热键，只能新增；</li>
+</ul>
+<h2 id="缓存击穿">缓存击穿
+</h2><p>缓存击穿指的是当某个热点数据过期或者被删除时，大量的请求同时涌入，导致数据库负载过高。这通常发生在高并发环境下。为了避免缓存击穿问题，可以采取以下措施：</p>
+<ul>
+<li>第一种就是将热点数据永久缓存进redis，并另起一个线程定时的去更新这个热点数据，那么就热点数据永远不会失效，但是缺陷是在定时任务启动前可能存在数据错误的情况；</li>
+<li>第二种情况那么就是加锁，使用互斥锁或者分布式锁来保护对数据库的访问，确保只有一个请求能够重新加载数据到缓存中。但是这种虽然解决了数据库问题，但同时也带来了性能下降；</li>
+</ul>
+<h2 id="缓存雪崩">缓存雪崩
+</h2><p>缓存雪崩指的是当缓存中大量的数据同时过期时，导致大量的请求直接访问数据库，造成数据库负载过高。这通常是由于缓存服务器故障、网络故障或者缓存数据过期时间设置不合理等原因导致的。为了避免缓存雪崩问题，可以采取以下措施：</p>
+<ul>
+<li>就是在给缓存数据设置过期时间的时候请加一个随机值使用不同的过期时间来分散缓存的失效时间，避免大量数据同时过期。</li>
+<li>使用热点数据预加载技术，在缓存数据即将过期之前，提前加载数据到缓存中，确保数据的可用性。</li>
+</ul>
+<h1 id="如何保证缓存与数据库之间的数据一致性">如何保证缓存与数据库之间的数据一致性
+</h1><p>保证缓存与数据库之间的强一致性是一个相对复杂的问题。尽管没有绝对的解决方案，但可以采取一些策略来尽可能地提高数据一致性。以下是几种常见的策略：</p>
+<p>第一种就是先删除缓存还是先写数据库，这两种都一样，我就说下先删除缓存带来的问题，先删除缓存确实可以在写完数据库后后续的操作都会更新缓存值，但是扛不住并发高，如果删除完缓存后还没来得及写入又被另一个线程读取了旧值更新缓存，那么这缓存白删除了，</p>
+<p>第二种就是先写数据库呢？如果数据库写完后，一是在删除缓存之前的读操作读取的仍然是旧值，二是，如果写操作完成后，缓存删除操作由于网络原因丢失了怎么办，以后读取操作都是旧值了；</p>
+<p>第三种也就是业界最常用的延时双删；但同时他也无法一定保证数据的一致性</p>
+<ul>
+<li>在操作数据库之前先删除缓存：首先，你需要先删除缓存中对应的数据，确保下一次读取请求不会命中旧的缓存数据</li>
+<li>更新数据库：然后，你可以更新数据库中的数据，确保数据库中的数据是最新的。</li>
+<li>再次删除缓存：最后，在延时之后，再次删除缓存中的数据。这样可以确保在延时结束后，读操作仍然可以从缓存中获取最新的数据。
+如果写操作很频繁，那么缺陷就很明显：很容易产生脏数据并且也无法满足缓存与数据库之间的一致性；</li>
+</ul>
+<p>第四种：引入MQ，当我们有两个消费者的时候，一个消费者只管消息的数据库操作，一个消费者只管消息的缓存操作，这样可以确保操作是原子操作。确保了不会删除缓存失败的问题。</p>
+<p>但是以上四种都无法保证缓存与数据库之间的强一致性，只能保证数据库与缓存之间的最终一致性；</p>
+<h1 id="如何设置过期时间实现原理是什么">如何设置过期时间，实现原理是什么
+</h1><p>redis有两种命令可以进行对key设置过期时间：<code>expire</code>和<code>setex</code>。这两种命令都可以用来给<code>key</code>设置过期时间。</p>
+<p>实现过期时间的原理可以分为两个部分。</p>
+<p>首先是主动删除。Redis会有一个定时任务，定期检查数据库中的key是否已经过期。如果发现某个key已经过期，那么Redis会直接将其删除。</p>
+<p>其次是被动删除。当应用程序尝试获取一个已经设置了过期时间的key时，Redis会检查该key是否已经过期。如果已经过期，Redis会在返回结果之前将该key删除。</p>
+<p>这样，通过主动删除和被动删除的组合，Redis实现了对key的过期时间的管理。这种混合实现的方式可以保证Redis中的数据始终是最新的，并且不会出现过期的数据。</p>
+<p>需要注意的是，Redis并不会为每个key都启动一个单独的定时任务去检查过期时间。相反，Redis会根据实际情况动态调整定时任务的执行频率，以提高性能和效率。这种设计可以有效地减少对系统资源的占用，提高Redis的性能和稳定性。</p>
+<h1 id="海量数据下如何快速查找一条记录">海量数据下，如何快速查找一条记录
+</h1><ul>
+<li><code>使用布隆过滤器</code>：布隆过滤器是一种概率型数据结构，可以用于判断某个元素是否存在于集合中。在海量数据下，可以先使用布隆过滤器将不存在的key过滤掉，这样可以减少部分请求，提高查询效率。</li>
+<li><code>合理选择存储结构</code>：在缓存记录时，可以考虑使用适合的存储结构。如果存储的是大对象，使用key+value（json）形式，那么key可能会很大，不建议使用。而如果使用hash结构存储，可以充分利用Redis的哈希表特性，提高存储效率。此外，可以根据实际情况选择其他存储结构，如列表、有序集合等。</li>
+<li><code>查询优化</code>:如果Redis是集群部署的，数据根据槽位进行分配。如果我们自己对key进行了定位，可以直接访问对应的Redis节点，而不需要通过集群路由。这样可以减少Redis集群的机器计算，提高查询性能。</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Oct 30, 2024 14:49 CST
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/_hu801e5d6833fe0131a9e1c7bf315f011c_5558893_81f3978e7c892b6df33e33f57906ace9.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 三次握手，四次挥手"
+                        
+                        data-hash="md5-6GgZkvBagSGfZCjg24J01Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">三次握手，四次挥手</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/">
+        
+        
+            <div class="article-image">
+                <img src="/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/_hu19c350ce9a1e9c89d80ace30d58c3ce3_3734368_c6cf621a29bcec490c543225fa3ee765.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post MySQL面试题"
+                        
+                        data-hash="md5-PuiR4QJmdEWMuGY0TaCIEQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MySQL面试题</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 乌鸦的记录博客
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

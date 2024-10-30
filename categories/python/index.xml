@@ -12,21 +12,25 @@
         <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
-        <description>&lt;img src="http://localhost:1313/c68fxf.jpg" alt="Featured image of post 设计模式" /&gt;&lt;h1 id=&#34;mvc模式&#34;&gt;MVC模式
+        <description>&lt;img src="http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/c68fxf.jpg" alt="Featured image of post 设计模式" /&gt;&lt;h1 id=&#34;mvc模式&#34;&gt;MVC模式
 &lt;/h1&gt;&lt;p&gt;MVC 模式代表 Model-View-Controller（模型-视图-控制器） 模式。这种模式用于应用程序的分层开发。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Model(模型)&lt;/code&gt; - 模型代表一个存取数据的对象或 JAVA POJO。它也可以带有逻辑，在数据变化时更新控制器。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;View(视图)&lt;/code&gt; -  视图代表模型包含的数据的可视化。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Controller(控制器)&lt;/code&gt; - 控制器作用于模型和视图上。它控制数据流向模型对象，并在数据变化时更新视图。它使视图与模型分离开。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image.png&#34;
+	width=&#34;552&#34;
+	height=&#34;473&#34;
+	srcset=&#34;http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image_hua8bf4f222eb9b7c83808c5c623e5eb52_55715_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image_hua8bf4f222eb9b7c83808c5c623e5eb52_55715_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;116&#34;
+		data-flex-basis=&#34;280px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;概要&#34;&gt;概要

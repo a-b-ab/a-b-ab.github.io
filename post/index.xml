@@ -7,27 +7,308 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>三次握手，四次挥手</title>
+        <link>http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</link>
+        <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/4489b3af8fc67423033c62d0af6023cdc7ccb3e7.jpg" alt="Featured image of post 三次握手，四次挥手" /&gt;&lt;h1 id=&#34;什么是tcp网络分层&#34;&gt;什么是TCP网络分层
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image.png&#34;
+	width=&#34;775&#34;
+	height=&#34;620&#34;
+	srcset=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image_hu515cfcadc6a6a3d7970f61fd7b9b2d81_201367_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image_hu515cfcadc6a6a3d7970f61fd7b9b2d81_201367_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;125&#34;
+		data-flex-basis=&#34;300px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;应⽤层&lt;/code&gt;:应用层是网络协议栈中的最顶层，主要负责应用程序之间的通信。其中一种常见的应用层协议是HTTP协议，它定义了应用程序之间如何传递报文。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;传输层&lt;/code&gt;:传输层是为两台主机之间的应用进程提供端到端的逻辑通信的层级。其中一种常见的传输层协议是TCP协议，它负责可靠的数据传输&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;⽹络互连层&lt;/code&gt;:网络互连层负责主机之间的通信，它将传输层产生的数据包封装成分组数据包，并通过路由选择将其发送到目标主机。IP协议是网络互连层的主要协议，TCP和UDP协议都使用IP协议作为网络层协议。该层的主要作用是为数据包添加源地址和目标地址，并将数据包传送到目标地址。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;网络访问层&lt;/code&gt;:网络访问层，也称为网络接口层，负责主机连接到物理网络所需的硬件和相关协议。以太网、Wi-Fi和蓝牙工作在这一层。网络访问层提供了主机与物理网络之间的接口。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;三次握手&#34;&gt;三次握手
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-1.png&#34;
+	width=&#34;872&#34;
+	height=&#34;361&#34;
+	srcset=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-1_hud5c0ee30f39e4a9aa7a4299e1764da64_197562_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-1_hud5c0ee30f39e4a9aa7a4299e1764da64_197562_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;241&#34;
+		data-flex-basis=&#34;579px&#34;
+	
+&gt;
+TCP的三次握手是为了建立可靠的连接，确保通信双方都能够正常发送和接收数据。下面是三次握手的过程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一次握手：客户端向服务器发送一个带有&lt;code&gt;SYM&lt;/code&gt;标志的数据包，表示请求建立连接，客户端将随机生成一个初始序列号(ISN)并将其放入&lt;code&gt;SYN&lt;/code&gt;字段中&lt;/li&gt;
+&lt;li&gt;第二次握手：服务器段接收到客户端的请求后，会发送一个带有&lt;code&gt;SYN&lt;/code&gt;和&lt;code&gt;ACK&lt;/code&gt;标志的数据包作为响应，服务器将确定序列号(ACK)设置为客户端的ISN加一，并生成自己的初始序列号&lt;/li&gt;
+&lt;li&gt;第三次握手：客户端收到服务器的响应后，会发送一个带有&lt;code&gt;ACK&lt;/code&gt;标志的数据包作为确认。客户端将确认序列号设置为服务器的ISN加一&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;如果只有两次握手，那么在某些情况下可能会导致不可靠的连接建立。例如，客户端发送了一个建立连接的请求，但由于网络延迟或其他原因，该请求在传输过程中被延迟到达服务器。服务器此时会误认为客户端要建立连接，于是发送确认响应。然而，客户端并未发送过请求，因此不会回复确认。这样就会导致服务器一直等待客户端的回复，浪费资源。&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;四次挥手&#34;&gt;四次挥手
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-2.png&#34;
+	width=&#34;843&#34;
+	height=&#34;575&#34;
+	srcset=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-2_hue5ff629fa187629891f4db0ecb455aa2_372741_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-2_hue5ff629fa187629891f4db0ecb455aa2_372741_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
+	
+&gt;
+TCP的四次挥手是为了结束已建立的连接，确保双方都能正确地关闭连接并释放资源。下面是四次挥手的过程&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一次挥手：客户端发送一个带有&lt;code&gt;FIN&lt;/code&gt;(结束)标志的数据包，表示自己已经没有数据要发送了，请求关闭连接&lt;/li&gt;
+&lt;li&gt;第二次挥手：服务器接收到客户端的结束请求后，会发送一个带有&lt;code&gt;ACK&lt;/code&gt;(确认)标志的数据包作为响应，表示已收到客户端的结束请求&lt;/li&gt;
+&lt;li&gt;第三次挥手：服务器发送一个带有&lt;code&gt;FIN&lt;/code&gt;标志的数据包，表示自己也没有数据要发送了，请求关闭连接&lt;/li&gt;
+&lt;li&gt;第四次挥手：客户端接收到服务器的结束请求后，会发送一个带有&lt;code&gt;ACK&lt;/code&gt;标志的数据包作为确认，表示已收到服务器的结束请求&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;假设只有三次挥手，当客户端发送结束请求后，服务器收到后会发送确认，表示已收到客户端的结束请求。但是在此过程中，服务器可能还有未发送完的数据，如果直接关闭连接，那么这些数据就会丢失。因此，引入第三次挥手，服务器在发送结束请求前，先发送所有未发送完的数据，并等待客户端的确认。客户端接收到服务器的结束请求后，会确认并处理完未接收的数据，然后发送确认，表示自己已准备好关闭连接。&lt;/em&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>缓存面试</title>
+        <link>http://localhost:1313/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/</link>
+        <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/bde24615776e497ac96491a690a2dbe94932a7ce1b9eb5-A6LFaJ.jpg" alt="Featured image of post 缓存面试" /&gt;&lt;h1 id=&#34;为什么使用缓存&#34;&gt;为什么使用缓存
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在程序内部使用缓存，比如使用map等数据结构作为内部缓存，可以快速获取对象。通过将经常使用的数据存储在缓存中，可以减少对数据库的频繁访问，从而提高系统的响应速度和性能。缓存可以将数据保存在内存中，读取速度更快，能够大大缩短数据访问的时间，提升用户体验。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在业界中，通常在数据库之前添加一层Redis缓存，这样可以避免数据库的性能被大量的请求耗费。当有大量的并发请求时，数据库可能会成为瓶颈，而使用缓存可以有效地缓解数据库的压力。Redis作为一种高效的缓存解决方案，可以将热门数据存储在内存中，以快速响应用户的请求。这种缓存层的引入不仅可以提高系统的性能和吞吐量，还可以提高系统的可靠性和稳定性，因为即使数据库出现故障，缓存仍然可以提供部分服务。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;缓存还可以减少网络传输的负载，特别是在分布式系统中。通过将计算结果或频繁访问的数据缓存起来，可以避免重复计算和重复访问数据库，节省了网络带宽和服务器的资源消耗。这对于海量数据的查找和计算密集型任务尤为重要，可以大大提升系统的效率和可扩展性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;总之，使用缓存可以优化系统的性能、提高响应速度、降低数据库负载、节省网络传输和服务器资源，从而提升用户体验和系统的可靠性。&lt;/p&gt;
+&lt;h1 id=&#34;缓存穿透击穿雪崩&#34;&gt;缓存穿透，击穿，雪崩
+&lt;/h1&gt;&lt;h2 id=&#34;缓存穿透&#34;&gt;缓存穿透
+&lt;/h2&gt;&lt;p&gt;缓存穿透指的是当一个请求查询的数据不在缓存中，也不在数据库中，导致每次请求都直接访问数据库，增加了数据库的负载。这可能是由于恶意攻击或者异常情况导致的。为了解决缓存穿透问题，可以采取以下措施&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在缓存中存储一个空值或者默认值，且设置成一定过期时间，以避免重复的无效查询，但是这种方案有缺陷就是redis会多出无用的key，浪费内存资源；&lt;/li&gt;
+&lt;li&gt;使用布隆过滤器等技术来过滤掉无效的请求，将可能不存在的数据快速过滤掉，布隆过滤器可以有效防止不存在的key进入业务调用数据库，但是需要提前将数据库数据预热到布隆过滤器中，并且他也有一种缺陷就是由于他的数据结构和算法导致无法删除热键，只能新增；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;缓存击穿&#34;&gt;缓存击穿
+&lt;/h2&gt;&lt;p&gt;缓存击穿指的是当某个热点数据过期或者被删除时，大量的请求同时涌入，导致数据库负载过高。这通常发生在高并发环境下。为了避免缓存击穿问题，可以采取以下措施：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一种就是将热点数据永久缓存进redis，并另起一个线程定时的去更新这个热点数据，那么就热点数据永远不会失效，但是缺陷是在定时任务启动前可能存在数据错误的情况；&lt;/li&gt;
+&lt;li&gt;第二种情况那么就是加锁，使用互斥锁或者分布式锁来保护对数据库的访问，确保只有一个请求能够重新加载数据到缓存中。但是这种虽然解决了数据库问题，但同时也带来了性能下降；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;缓存雪崩&#34;&gt;缓存雪崩
+&lt;/h2&gt;&lt;p&gt;缓存雪崩指的是当缓存中大量的数据同时过期时，导致大量的请求直接访问数据库，造成数据库负载过高。这通常是由于缓存服务器故障、网络故障或者缓存数据过期时间设置不合理等原因导致的。为了避免缓存雪崩问题，可以采取以下措施：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;就是在给缓存数据设置过期时间的时候请加一个随机值使用不同的过期时间来分散缓存的失效时间，避免大量数据同时过期。&lt;/li&gt;
+&lt;li&gt;使用热点数据预加载技术，在缓存数据即将过期之前，提前加载数据到缓存中，确保数据的可用性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;如何保证缓存与数据库之间的数据一致性&#34;&gt;如何保证缓存与数据库之间的数据一致性
+&lt;/h1&gt;&lt;p&gt;保证缓存与数据库之间的强一致性是一个相对复杂的问题。尽管没有绝对的解决方案，但可以采取一些策略来尽可能地提高数据一致性。以下是几种常见的策略：&lt;/p&gt;
+&lt;p&gt;第一种就是先删除缓存还是先写数据库，这两种都一样，我就说下先删除缓存带来的问题，先删除缓存确实可以在写完数据库后后续的操作都会更新缓存值，但是扛不住并发高，如果删除完缓存后还没来得及写入又被另一个线程读取了旧值更新缓存，那么这缓存白删除了，&lt;/p&gt;
+&lt;p&gt;第二种就是先写数据库呢？如果数据库写完后，一是在删除缓存之前的读操作读取的仍然是旧值，二是，如果写操作完成后，缓存删除操作由于网络原因丢失了怎么办，以后读取操作都是旧值了；&lt;/p&gt;
+&lt;p&gt;第三种也就是业界最常用的延时双删；但同时他也无法一定保证数据的一致性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在操作数据库之前先删除缓存：首先，你需要先删除缓存中对应的数据，确保下一次读取请求不会命中旧的缓存数据&lt;/li&gt;
+&lt;li&gt;更新数据库：然后，你可以更新数据库中的数据，确保数据库中的数据是最新的。&lt;/li&gt;
+&lt;li&gt;再次删除缓存：最后，在延时之后，再次删除缓存中的数据。这样可以确保在延时结束后，读操作仍然可以从缓存中获取最新的数据。
+如果写操作很频繁，那么缺陷就很明显：很容易产生脏数据并且也无法满足缓存与数据库之间的一致性；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;第四种：引入MQ，当我们有两个消费者的时候，一个消费者只管消息的数据库操作，一个消费者只管消息的缓存操作，这样可以确保操作是原子操作。确保了不会删除缓存失败的问题。&lt;/p&gt;
+&lt;p&gt;但是以上四种都无法保证缓存与数据库之间的强一致性，只能保证数据库与缓存之间的最终一致性；&lt;/p&gt;
+&lt;h1 id=&#34;如何设置过期时间实现原理是什么&#34;&gt;如何设置过期时间，实现原理是什么
+&lt;/h1&gt;&lt;p&gt;redis有两种命令可以进行对key设置过期时间：&lt;code&gt;expire&lt;/code&gt;和&lt;code&gt;setex&lt;/code&gt;。这两种命令都可以用来给&lt;code&gt;key&lt;/code&gt;设置过期时间。&lt;/p&gt;
+&lt;p&gt;实现过期时间的原理可以分为两个部分。&lt;/p&gt;
+&lt;p&gt;首先是主动删除。Redis会有一个定时任务，定期检查数据库中的key是否已经过期。如果发现某个key已经过期，那么Redis会直接将其删除。&lt;/p&gt;
+&lt;p&gt;其次是被动删除。当应用程序尝试获取一个已经设置了过期时间的key时，Redis会检查该key是否已经过期。如果已经过期，Redis会在返回结果之前将该key删除。&lt;/p&gt;
+&lt;p&gt;这样，通过主动删除和被动删除的组合，Redis实现了对key的过期时间的管理。这种混合实现的方式可以保证Redis中的数据始终是最新的，并且不会出现过期的数据。&lt;/p&gt;
+&lt;p&gt;需要注意的是，Redis并不会为每个key都启动一个单独的定时任务去检查过期时间。相反，Redis会根据实际情况动态调整定时任务的执行频率，以提高性能和效率。这种设计可以有效地减少对系统资源的占用，提高Redis的性能和稳定性。&lt;/p&gt;
+&lt;h1 id=&#34;海量数据下如何快速查找一条记录&#34;&gt;海量数据下，如何快速查找一条记录
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;使用布隆过滤器&lt;/code&gt;：布隆过滤器是一种概率型数据结构，可以用于判断某个元素是否存在于集合中。在海量数据下，可以先使用布隆过滤器将不存在的key过滤掉，这样可以减少部分请求，提高查询效率。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;合理选择存储结构&lt;/code&gt;：在缓存记录时，可以考虑使用适合的存储结构。如果存储的是大对象，使用key+value（json）形式，那么key可能会很大，不建议使用。而如果使用hash结构存储，可以充分利用Redis的哈希表特性，提高存储效率。此外，可以根据实际情况选择其他存储结构，如列表、有序集合等。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;查询优化&lt;/code&gt;:如果Redis是集群部署的，数据根据槽位进行分配。如果我们自己对key进行了定位，可以直接访问对应的Redis节点，而不需要通过集群路由。这样可以减少Redis集群的机器计算，提高查询性能。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>MySQL面试题</title>
+        <link>http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+        <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+        <description>&lt;img src="http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/2d5af84764dc1c4b23b15122a70a707d.jpg" alt="Featured image of post MySQL面试题" /&gt;&lt;h1 id=&#34;mysql有哪几种数据存储引擎有什么区别&#34;&gt;MySQL有哪几种数据存储引擎，有什么区别
+&lt;/h1&gt;&lt;p&gt;MySQL支持多种数据存储引擎，其中最常见的是&lt;code&gt;MyISAM&lt;/code&gt;和&lt;code&gt;InnoDB&lt;/code&gt;引擎。可以通过使用&amp;quot;&lt;code&gt;show engines&lt;/code&gt;&amp;ldquo;命令查看MySQL支持的存储引擎。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;存储方式&lt;/code&gt;：&lt;code&gt;MyISAM引擎&lt;/code&gt;将数据和索引分别存储在两个不同的文件中，一个是&lt;code&gt;.MYD用于存储数据&lt;/code&gt;，一个是&lt;code&gt;.MYI文件用于存储索引&lt;/code&gt;，而I&lt;code&gt;nnoDB引擎&lt;/code&gt;将数据和索引存储在同一个文件中&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;锁机制&lt;/code&gt;：MyISAM引擎只支持&lt;code&gt;表级锁&lt;/code&gt;，即在对某个表进行读写时，会锁住整个表，其他操作需要等待。而InnoDB引擎支持&lt;code&gt;行级锁&lt;/code&gt;，可以在并发访问时只锁住需要操作的行，提高了并发性能。`&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;事务支持&lt;/code&gt;：MyISAM引擎不支持事务，而InnoDB引擎支持事务。事务是一种保证数据一致性和完整性的机制，可以将多个操作作为一个整体进行提交或回滚&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;外键支持&lt;/code&gt;：MyISAM引擎不支持外键约束，而InnoDB引擎支持外键约束。外键是用于维护表与表之间关系的一种机制，可以确保数据的一致性&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;什么是脏读幻读不可重复读要怎么处理&#34;&gt;什么是脏读、幻读、不可重复读？要怎么处理？
+&lt;/h1&gt;&lt;p&gt;&lt;em&gt;脏读、不可重复读和幻读是数据库中的一些并发问题。&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;脏读&lt;/code&gt;：是指一个事务在读取另一个未提交事务的数据时，如果未提交事务回滚了，则读取到的数据是不一致的&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;不可重复读&lt;/code&gt;：一个事务在相同的查询条件下，多次读取数据结果不一致，例如：事务A第一次读取数据时，事务B修改了相同的数据并提交，导致事务A第二次读取时数据不一致&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;幻读&lt;/code&gt;：一个事务在多次查询中，由于其他事务插入或删除数据，导致查询结构出现新增或减少的情况&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;处理这些问题的方法有几种：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;加锁&lt;/code&gt;：可以使用数据库提供的锁机制，如行级锁或表级锁，来控制并发访问，确保数据的一致性。但是加锁会降低并发性能。需要自己根据业务需要添加共享锁还是排它锁。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;调整事务隔离级别&lt;/code&gt;：数据库提供了不同的事务隔离级别，如读未提交、读已提交、可重复读和串行化。可以根据具体情况选择合适的隔离级别来避免并发问题。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;事务的基本特性和隔离级别有哪些&#34;&gt;事务的基本特性和隔离级别有哪些
+&lt;/h1&gt;&lt;p&gt;事务的基本特性ACID&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;原子性&lt;/code&gt;：一个事务中的所有操作要么全部成功提交，要么全部失败回滚。事务是一个不可分割的工作单位，要么全部执行，要么全部不执行。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;一致性&lt;/code&gt;：事务执行前后，数据库的完整性约束没有被破坏。事务的操作会将数据库从一个一致性状态转换为另一个一致性状态。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;隔离性&lt;/code&gt;：并发执行的事务之间应该相互隔离，一个事务的执行不应该被其他事务干扰。隔离性确保每个事务在并发环境中都能独立执行，不会受其他事务的影响。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;持久性&lt;/code&gt;：一旦事务提交成功，其所做的修改将永久保存在数据库中。即使发生系统崩溃或电源故障，数据库也能够恢复到事务提交后的状态。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;隔离级别是控制事务隔离性的一个参数，常见的隔离级别包括：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;读未提交&lt;/code&gt;:最低级别的隔离级别，允许一个事务读取另一个事务未提交的数据。会出现脏读问题。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;读已提交&lt;/code&gt;：保证一个事务只能读取到其他事务已经提交的数据，解决了脏读问题。但是可能会出现不可重复读问题。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;可重复读&lt;/code&gt;：保证在一个事务中多次读取同一数据时，得到的结果是一致的。解决了不可重复读问题。但是可能会出现幻读问题。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;串行化&lt;/code&gt;：最高级别的隔离级别，要求事务串行执行，避免了幻读问题。但是会降低并发性能。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;mysql的锁有哪些什么时间隙锁&#34;&gt;MySQL的锁有哪些，什么时间隙锁
+&lt;/h1&gt;&lt;p&gt;MySQL的锁可以根据锁的粒度进行划分，包括行锁、表锁和全局锁。下面是对每种锁的详细说明：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;行锁&lt;/code&gt;：InnoDB引擎支持行锁，它的粒度很小，可以提供较好的并发性能，但是会消耗更多的资源。行锁又可以细分为以下两种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;共享锁&lt;/code&gt;：使用&lt;code&gt;SELECT ** LOCK IN SHARE MODE&lt;/code&gt;语句来获取共享锁，读取操作期间可以共享，但会阻塞写操作。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;排它锁&lt;/code&gt;：使用&lt;code&gt;SELECT ** FOR UPDATE&lt;/code&gt;语句来获取排它锁，各种操作都会被阻塞，而且在执行&lt;code&gt;INSERT&lt;/code&gt;、&lt;code&gt;DELETE&lt;/code&gt;、&lt;code&gt;UPDATE&lt;/code&gt;语句时会自动添加排它锁。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;自增锁&lt;/code&gt;：当涉及到自增字段时，每次获取自增值时都会进行阻塞。需要注意的是，自增锁与业务逻辑无关。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;表锁&lt;/code&gt;：直接锁住整张表而不是单独的行，表锁消耗的资源比较少，但是锁的粒度较大，导致并发性能较低。表锁可以细分为以下两种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;表共享锁&lt;/code&gt;：多个会话可以同时获取表的共享锁，读操作可以并发进行，但是写&lt;code&gt;（INSERT、DELETE、UPDATE）&lt;/code&gt;会被阻塞。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;表排它锁&lt;/code&gt;：获取表排它锁的会话会阻塞其他会话的所有操作，包括读和写。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;全局锁&lt;/code&gt;：使用&lt;code&gt;FLUSH TABLES WITH READ LOCK&lt;/code&gt;语句来获取全局锁，通常用于表数据备份等场景。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;间隙锁&lt;/code&gt;：&lt;code&gt;（Gap Lock）&lt;/code&gt;主要针对带&lt;code&gt;有索引的字段&lt;/code&gt;。例如，对于一个拥有user_id索引的user表(user_id, name),数据有（1，a）（4，b）（9，c），当执行&lt;code&gt;UPDATE user SET name = d WHERE user_id = 5&lt;/code&gt;时，会锁定 5-9 之间的记录（不包括自身）。而执行&lt;code&gt;UPDATE user SET name = 5 WHERE user_id = 4&lt;/code&gt;时，则是记录锁，只锁住一条记录。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;另一种类型是&lt;code&gt;Next-Key锁&lt;/code&gt;，它实际上是右侧界的记录锁。对于上述user表的索引，Next-Key锁会在(1, a)、(4, b)、(9, c)之间进行锁定。表示从左开区间到右开区间封闭，即（ -∞, 1], (1, 4], (4, 9], (9, +∞)。这样可以确保范围内的记录都受到锁的保护。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;通过使用间隙锁和Next-Key锁，可以更精确地控制并发操作，提高数据库的数据一致性和并发性能。&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;mysql的索引结构是什么样的聚簇索引和非聚簇索引又是什么&#34;&gt;MySQL的索引结构是什么样的？聚簇索引和非聚簇索引又是什么？
+&lt;/h1&gt;&lt;p&gt;MySQL是一种广泛使用的关系型数据库管理系统，具有多种存储引擎和索引结构可供选择。&lt;strong&gt;存储引擎是MySQL用来处理数据的核心组件，而索引结构则用于提高数据检索的效率。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在MySQL中，最常见和常用的存储引擎是InnoDB和MyISAM。&lt;em&gt;InnoDB是一个支持事务处理和行级锁定的存储引擎，适用于处理大量并发操作和高可靠性要求的应用。而MyISAM则是一个更适合于读写不频繁的应用，它不支持事务处理，但速度较快。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;索引结构是用来加快数据检索速度的一种数据结构。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;B+树索引&lt;/code&gt;是MySQL中最常见的索引结构。它使用B+树的数据结构来存储索引值和对应的数据行位置。非叶子节点只存储索引值，叶子节点存储索引值和对应的数据行位置。B+树索引的叶子节点按照索引值的顺序排列，并且通过双向链表连接，使得范围查询和最左前缀匹配查询更高效。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;哈希索引&lt;/code&gt;将索引值通过哈希函数映射为一个唯一的哈希值，并将哈希值和对应的数据行位置存储在哈希表中。哈希索引适用于等值查询，但不支持范围查询和模糊查询。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;聚簇索引&lt;/code&gt;是索引值和表的数据存储在一起的索引结构。在InnoDB存储引擎中，聚簇索引使用B+树来实现，叶子节点存储数据行的实际数据。一个表只能有一个聚簇索引，如果没有显式指定主键，那么会找第一个unique字段当做主键索引，否则将会使用隐藏的rowid作为主键索引。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;非聚簇索引&lt;/code&gt;是索引值和表的数据分开存储的索引结构。在MyISAM存储引擎中，每个索引都是一个独立的文件，存储索引值和对应的数据行位置。一张表可以有多个非聚簇索引，比如表的普通索引。&lt;/p&gt;
+&lt;h2 id=&#34;mysql的覆盖索引和回表&#34;&gt;MySQL的覆盖索引和回表
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;覆盖索引是指索引包含了查询所需的所有字段，这样在查询时就可以直接使用索引中的数据，而无需回表去读取数据行。这种方式可以减少磁盘I/O操作，提高查询性能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当一个查询只需要从索引中获取数据而不需要回表时，就可以称之为覆盖索引查询。在这种情况下，数据库引擎只需要读取索引页，而不需要再去读取数据页，从而节省了磁盘I/O开销。&lt;/p&gt;
+&lt;p&gt;使用覆盖索引可以提高查询性能的原因是，索引通常比数据行小很多，所以从索引中读取数据比从数据行中读取数据更快。此外，覆盖索引还可以减少内存的使用，因为不需要将数据行加载到内存中进行处理。&lt;/p&gt;
+&lt;p&gt;为了使用覆盖索引，需要确保查询语句中只包含索引字段，并且索引能够满足查询条件和排序需求。如果查询语句中包含了非索引字段，那么数据库引擎仍然需要回表去读取数据行，无法实现覆盖索引查询的优化效果。&lt;/p&gt;
+&lt;h1 id=&#34;mysql的集群是如何搭建的读写分离是怎么做的&#34;&gt;MySQL的集群是如何搭建的，读写分离是怎么做的
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image.png&#34;
+	width=&#34;712&#34;
+	height=&#34;478&#34;
+	srcset=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image_hub886812bb151133a1a28da14eecdf1a2_203396_480x0_resize_box_3.png 480w, http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image_hub886812bb151133a1a28da14eecdf1a2_203396_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;148&#34;
+		data-flex-basis=&#34;357px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;MySQL的集群搭建通常使用&lt;code&gt;主从复制&lt;/code&gt;的方式，并结合读写分离来提高数据库的性能和可用性。&lt;/p&gt;
+&lt;p&gt;首先，在搭建MySQL集群之前，需要确定一个主节点和多个从节点。主节点负责处理写操作，从节点负责处理读操作。&lt;/p&gt;
+&lt;p&gt;在主节点接收到写操作时，会将修改的数据记录到binlog日志中。binlog是二进制日志，用于记录数据库的所有修改操作。从节点会定期读取主节点的binlog日志，并将这些操作应用到自己的数据库中，实现主从数据的同步。&lt;/p&gt;
+&lt;p&gt;通常情况下，当一个未提交的事务进行操作数据时，首先写入到undolog，其次写入redolog和binlog，但是提交事务之前并不会写入磁盘，只是在内存中，这种设计可以提高数据库的性能，因为将数据写入磁盘是比较耗时的操作，而将数据暂时保存在内存中可以减少磁盘访问的次数，从而提高数据库的处理速度。&lt;/p&gt;
+&lt;p&gt;在读写分离的架构中，还需要考虑主从复制的延迟问题。由于主从复制是异步的，所以从节点上的数据可能不是实时同步的。可以通过设置合适的复制延迟时间来平衡数据的一致性和性能的需求。&lt;/p&gt;
+&lt;p&gt;半同步复制是MySQL主从复制的一种机制，它在传输binlog日志时，主节点需要等待至少一个从节点确认收到并写入日志后才能继续进行下一步操作。&lt;/p&gt;
+&lt;p&gt;具体的工作流程如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;当主节点完成一次事务的提交后，它会将binlog日志发送给一个或多个从节点。&lt;/li&gt;
+&lt;li&gt;主节点会等待至少一个从节点将binlog日志写入磁盘并发送一个确认消息给主节点。&lt;/li&gt;
+&lt;li&gt;一旦主节点收到至少一个从节点的确认消息，它才会认为该次提交已经完成，可以继续进行下一次操作。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;谈谈如何对mysql进行分库分表多大数据量需要进行分库分表分库分表的方式和分片策略由哪些分库分表后sql语句的执行流程是怎样的&#34;&gt;谈谈如何对MySQL进行分库分表？多大数据量需要进行分库分表？分库分表的方式和分片策略由哪些？分库分表后，SQL语句的执行流程是怎样的？
+&lt;/h1&gt;&lt;p&gt;分库分表是一种常用的数据库架构优化技术，用于应对数据规模不断增长的情况。分库分表可以通过纵向拆分和横向拆分两种方式进行。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;纵向拆分&lt;/code&gt;是将不同的业务数据分开存储在不同的数据库中，每个数据库对应一个业务。这样可以有效避免单一数据库数据量过大导致的性能问题，但无法解决单个业务数据量过大的查询问题。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;横向拆分&lt;/code&gt;是将单个表中的数据按照某些字段进行拆分，将数据分散存储在多个表中。这样可以减小单个表的数据量，提高查询效率。常见的分片策略有按照范围、按照哈希和按照取模等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;分库分表会引入新的问题，例如数据的拆分和合并、开发和维护的复杂度增加等。因此，在选择分库分表之前，需要根据业务的增长速度和数据量来判断是否需要进行分库分表。根据阿里的开发规范手册，一般在数据量达到500万或单个表文件大小增长到2G时，可以考虑进行分库分表的规划。&lt;/p&gt;
+&lt;p&gt;通常，可以使用一些开源的分库分表中间件，如Mycat或ShardingSphere，来实现分库分表功能。这些中间件支持DDL、DML等语句的执行，能够进行排序、分组聚合等操作。但对于一些复杂的SQL语句，如子查询，可能存在一定的限制&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1.png&#34;
+	width=&#34;747&#34;
+	height=&#34;754&#34;
+	srcset=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1_hu6ee8df2b5bd0003344c3424e009bdeca_128905_480x0_resize_box_3.png 480w, http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1_hu6ee8df2b5bd0003344c3424e009bdeca_128905_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;99&#34;
+		data-flex-basis=&#34;237px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;SQL语句的执行流程一般包括解析、优化、路由、分片和归并结果集等步骤。首先，数据库会对SQL语句进行解析，将其转换成内部数据结构。然后，通过优化器对SQL语句进行优化，生成最优的执行计划。接下来，根据分片策略，确定需要执行的数据库和表。然后，将SQL语句发送到相应的数据库节点执行。最后，将执行结果进行归并，返回给用户&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>设计模式</title>
         <link>http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
         <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
-        <description>&lt;img src="http://localhost:1313/c68fxf.jpg" alt="Featured image of post 设计模式" /&gt;&lt;h1 id=&#34;mvc模式&#34;&gt;MVC模式
+        <description>&lt;img src="http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/c68fxf.jpg" alt="Featured image of post 设计模式" /&gt;&lt;h1 id=&#34;mvc模式&#34;&gt;MVC模式
 &lt;/h1&gt;&lt;p&gt;MVC 模式代表 Model-View-Controller（模型-视图-控制器） 模式。这种模式用于应用程序的分层开发。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Model(模型)&lt;/code&gt; - 模型代表一个存取数据的对象或 JAVA POJO。它也可以带有逻辑，在数据变化时更新控制器。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;View(视图)&lt;/code&gt; -  视图代表模型包含的数据的可视化。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Controller(控制器)&lt;/code&gt; - 控制器作用于模型和视图上。它控制数据流向模型对象，并在数据变化时更新视图。它使视图与模型分离开。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image.png&#34;
+	width=&#34;552&#34;
+	height=&#34;473&#34;
+	srcset=&#34;http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image_hua8bf4f222eb9b7c83808c5c623e5eb52_55715_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image_hua8bf4f222eb9b7c83808c5c623e5eb52_55715_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;116&#34;
+		data-flex-basis=&#34;280px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;概要&#34;&gt;概要
