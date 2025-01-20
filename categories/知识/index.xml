@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>知识 on 乌鸦</title>
-        <link>http://localhost:1313/categories/%E7%9F%A5%E8%AF%86/</link>
+        <link>https://a-b-ab.github.io/categories/%E7%9F%A5%E8%AF%86/</link>
         <description>Recent content in 知识 on 乌鸦</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>三次握手，四次挥手</title>
-        <link>http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</link>
+        <link>https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</link>
         <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/4489b3af8fc67423033c62d0af6023cdc7ccb3e7.jpg" alt="Featured image of post 三次握手，四次挥手" /&gt;&lt;h1 id=&#34;什么是tcp网络分层&#34;&gt;什么是TCP网络分层
-&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image.png&#34;
+        <guid>https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/4489b3af8fc67423033c62d0af6023cdc7ccb3e7.jpg" alt="Featured image of post 三次握手，四次挥手" /&gt;&lt;h1 id=&#34;什么是tcp网络分层&#34;&gt;什么是TCP网络分层
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image.png&#34;
 	width=&#34;775&#34;
 	height=&#34;620&#34;
-	srcset=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image_hu515cfcadc6a6a3d7970f61fd7b9b2d81_201367_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image_hu515cfcadc6a6a3d7970f61fd7b9b2d81_201367_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image_hu515cfcadc6a6a3d7970f61fd7b9b2d81_201367_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image_hu515cfcadc6a6a3d7970f61fd7b9b2d81_201367_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -35,10 +35,10 @@
 &lt;li&gt;&lt;code&gt;网络访问层&lt;/code&gt;:网络访问层，也称为网络接口层，负责主机连接到物理网络所需的硬件和相关协议。以太网、Wi-Fi和蓝牙工作在这一层。网络访问层提供了主机与物理网络之间的接口。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;三次握手&#34;&gt;三次握手
-&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-1.png&#34;
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-1.png&#34;
 	width=&#34;872&#34;
 	height=&#34;361&#34;
-	srcset=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-1_hud5c0ee30f39e4a9aa7a4299e1764da64_197562_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-1_hud5c0ee30f39e4a9aa7a4299e1764da64_197562_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-1_hud5c0ee30f39e4a9aa7a4299e1764da64_197562_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-1_hud5c0ee30f39e4a9aa7a4299e1764da64_197562_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -57,10 +57,10 @@ TCP的三次握手是为了建立可靠的连接，确保通信双方都能够�
 &lt;/ol&gt;
 &lt;p&gt;&lt;em&gt;如果只有两次握手，那么在某些情况下可能会导致不可靠的连接建立。例如，客户端发送了一个建立连接的请求，但由于网络延迟或其他原因，该请求在传输过程中被延迟到达服务器。服务器此时会误认为客户端要建立连接，于是发送确认响应。然而，客户端并未发送过请求，因此不会回复确认。这样就会导致服务器一直等待客户端的回复，浪费资源。&lt;/em&gt;&lt;/p&gt;
 &lt;h1 id=&#34;四次挥手&#34;&gt;四次挥手
-&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-2.png&#34;
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-2.png&#34;
 	width=&#34;843&#34;
 	height=&#34;575&#34;
-	srcset=&#34;http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-2_hue5ff629fa187629891f4db0ecb455aa2_372741_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-2_hue5ff629fa187629891f4db0ecb455aa2_372741_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-2_hue5ff629fa187629891f4db0ecb455aa2_372741_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/image-2_hue5ff629fa187629891f4db0ecb455aa2_372741_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -83,11 +83,11 @@ TCP的四次挥手是为了结束已建立的连接，确保双方都能正确�
         </item>
         <item>
         <title>缓存面试</title>
-        <link>http://localhost:1313/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/</link>
+        <link>https://a-b-ab.github.io/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/</link>
         <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/bde24615776e497ac96491a690a2dbe94932a7ce1b9eb5-A6LFaJ.jpg" alt="Featured image of post 缓存面试" /&gt;&lt;h1 id=&#34;为什么使用缓存&#34;&gt;为什么使用缓存
+        <guid>https://a-b-ab.github.io/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/%E7%BC%93%E5%AD%98%E9%9D%A2%E8%AF%95/bde24615776e497ac96491a690a2dbe94932a7ce1b9eb5-A6LFaJ.jpg" alt="Featured image of post 缓存面试" /&gt;&lt;h1 id=&#34;为什么使用缓存&#34;&gt;为什么使用缓存
 &lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在程序内部使用缓存，比如使用map等数据结构作为内部缓存，可以快速获取对象。通过将经常使用的数据存储在缓存中，可以减少对数据库的频繁访问，从而提高系统的响应速度和性能。缓存可以将数据保存在内存中，读取速度更快，能够大大缩短数据访问的时间，提升用户体验。&lt;/p&gt;
@@ -149,11 +149,11 @@ TCP的四次挥手是为了结束已建立的连接，确保双方都能正确�
         </item>
         <item>
         <title>MySQL面试题</title>
-        <link>http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+        <link>https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
         <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-        <description>&lt;img src="http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/2d5af84764dc1c4b23b15122a70a707d.jpg" alt="Featured image of post MySQL面试题" /&gt;&lt;h1 id=&#34;mysql有哪几种数据存储引擎有什么区别&#34;&gt;MySQL有哪几种数据存储引擎，有什么区别
+        <guid>https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/2d5af84764dc1c4b23b15122a70a707d.jpg" alt="Featured image of post MySQL面试题" /&gt;&lt;h1 id=&#34;mysql有哪几种数据存储引擎有什么区别&#34;&gt;MySQL有哪几种数据存储引擎，有什么区别
 &lt;/h1&gt;&lt;p&gt;MySQL支持多种数据存储引擎，其中最常见的是&lt;code&gt;MyISAM&lt;/code&gt;和&lt;code&gt;InnoDB&lt;/code&gt;引擎。可以通过使用&amp;quot;&lt;code&gt;show engines&lt;/code&gt;&amp;ldquo;命令查看MySQL支持的存储引擎。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;存储方式&lt;/code&gt;：&lt;code&gt;MyISAM引擎&lt;/code&gt;将数据和索引分别存储在两个不同的文件中，一个是&lt;code&gt;.MYD用于存储数据&lt;/code&gt;，一个是&lt;code&gt;.MYI文件用于存储索引&lt;/code&gt;，而I&lt;code&gt;nnoDB引擎&lt;/code&gt;将数据和索引存储在同一个文件中&lt;/li&gt;
@@ -233,10 +233,10 @@ TCP的四次挥手是为了结束已建立的连接，确保双方都能正确�
 &lt;p&gt;使用覆盖索引可以提高查询性能的原因是，索引通常比数据行小很多，所以从索引中读取数据比从数据行中读取数据更快。此外，覆盖索引还可以减少内存的使用，因为不需要将数据行加载到内存中进行处理。&lt;/p&gt;
 &lt;p&gt;为了使用覆盖索引，需要确保查询语句中只包含索引字段，并且索引能够满足查询条件和排序需求。如果查询语句中包含了非索引字段，那么数据库引擎仍然需要回表去读取数据行，无法实现覆盖索引查询的优化效果。&lt;/p&gt;
 &lt;h1 id=&#34;mysql的集群是如何搭建的读写分离是怎么做的&#34;&gt;MySQL的集群是如何搭建的，读写分离是怎么做的
-&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image.png&#34;
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image.png&#34;
 	width=&#34;712&#34;
 	height=&#34;478&#34;
-	srcset=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image_hub886812bb151133a1a28da14eecdf1a2_203396_480x0_resize_box_3.png 480w, http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image_hub886812bb151133a1a28da14eecdf1a2_203396_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image_hub886812bb151133a1a28da14eecdf1a2_203396_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image_hub886812bb151133a1a28da14eecdf1a2_203396_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -267,10 +267,10 @@ TCP的四次挥手是为了结束已建立的连接，确保双方都能正确�
 &lt;/ul&gt;
 &lt;p&gt;分库分表会引入新的问题，例如数据的拆分和合并、开发和维护的复杂度增加等。因此，在选择分库分表之前，需要根据业务的增长速度和数据量来判断是否需要进行分库分表。根据阿里的开发规范手册，一般在数据量达到500万或单个表文件大小增长到2G时，可以考虑进行分库分表的规划。&lt;/p&gt;
 &lt;p&gt;通常，可以使用一些开源的分库分表中间件，如Mycat或ShardingSphere，来实现分库分表功能。这些中间件支持DDL、DML等语句的执行，能够进行排序、分组聚合等操作。但对于一些复杂的SQL语句，如子查询，可能存在一定的限制&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1.png&#34;
 	width=&#34;747&#34;
 	height=&#34;754&#34;
-	srcset=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1_hu6ee8df2b5bd0003344c3424e009bdeca_128905_480x0_resize_box_3.png 480w, http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1_hu6ee8df2b5bd0003344c3424e009bdeca_128905_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1_hu6ee8df2b5bd0003344c3424e009bdeca_128905_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1_hu6ee8df2b5bd0003344c3424e009bdeca_128905_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;

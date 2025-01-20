@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>编程 on 乌鸦</title>
-        <link>http://localhost:1313/categories/%E7%BC%96%E7%A8%8B/</link>
+        <link>https://a-b-ab.github.io/categories/%E7%BC%96%E7%A8%8B/</link>
         <description>Recent content in 编程 on 乌鸦</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>设计模式</title>
-        <link>http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+        <link>https://a-b-ab.github.io/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
         <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/c68fxf.jpg" alt="Featured image of post 设计模式" /&gt;&lt;h1 id=&#34;mvc模式&#34;&gt;MVC模式
+        <guid>https://a-b-ab.github.io/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/c68fxf.jpg" alt="Featured image of post 设计模式" /&gt;&lt;h1 id=&#34;mvc模式&#34;&gt;MVC模式
 &lt;/h1&gt;&lt;p&gt;MVC 模式代表 Model-View-Controller（模型-视图-控制器） 模式。这种模式用于应用程序的分层开发。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Model(模型)&lt;/code&gt; - 模型代表一个存取数据的对象或 JAVA POJO。它也可以带有逻辑，在数据变化时更新控制器。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;View(视图)&lt;/code&gt; -  视图代表模型包含的数据的可视化。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Controller(控制器)&lt;/code&gt; - 控制器作用于模型和视图上。它控制数据流向模型对象，并在数据变化时更新视图。它使视图与模型分离开。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image.png&#34;
 	width=&#34;552&#34;
 	height=&#34;473&#34;
-	srcset=&#34;http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image_hua8bf4f222eb9b7c83808c5c623e5eb52_55715_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image_hua8bf4f222eb9b7c83808c5c623e5eb52_55715_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image_hua8bf4f222eb9b7c83808c5c623e5eb52_55715_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/image_hua8bf4f222eb9b7c83808c5c623e5eb52_55715_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2449,11 +2449,11 @@
         </item>
         <item>
         <title>Python笔记(廖雪峰)</title>
-        <link>http://localhost:1313/p/python%E7%AC%94%E8%AE%B0%E5%BB%96%E9%9B%AA%E5%B3%B0/</link>
+        <link>https://a-b-ab.github.io/p/python%E7%AC%94%E8%AE%B0%E5%BB%96%E9%9B%AA%E5%B3%B0/</link>
         <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/python%E7%AC%94%E8%AE%B0%E5%BB%96%E9%9B%AA%E5%B3%B0/</guid>
-        <description>&lt;img src="http://localhost:1313/p/python%E7%AC%94%E8%AE%B0%E5%BB%96%E9%9B%AA%E5%B3%B0/39ddbb84c4a998da1962a60addcfed6c201d30f8.jpg" alt="Featured image of post Python笔记(廖雪峰)" /&gt;&lt;h1 id=&#34;高级特性&#34;&gt;高级特性
+        <guid>https://a-b-ab.github.io/p/python%E7%AC%94%E8%AE%B0%E5%BB%96%E9%9B%AA%E5%B3%B0/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/python%E7%AC%94%E8%AE%B0%E5%BB%96%E9%9B%AA%E5%B3%B0/39ddbb84c4a998da1962a60addcfed6c201d30f8.jpg" alt="Featured image of post Python笔记(廖雪峰)" /&gt;&lt;h1 id=&#34;高级特性&#34;&gt;高级特性
 &lt;/h1&gt;&lt;h2 id=&#34;迭代&#34;&gt;迭代
 &lt;/h2&gt;&lt;p&gt;只要是可迭代对象，无论有无下标，都可以迭代，比如dict就可以迭代&lt;/p&gt;
 &lt;p&gt;那么，如何判断一个对象是可迭代对象呢？方法是通过collections.abc模块的Iterable类型判断：&lt;/p&gt;
@@ -4166,11 +4166,11 @@ class的方法名称与函数绑定，这里我们把函数fn绑定到方法名h
         </item>
         <item>
         <title>Redis笔记</title>
-        <link>http://localhost:1313/p/redis%E7%AC%94%E8%AE%B0/</link>
+        <link>https://a-b-ab.github.io/p/redis%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/redis%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="http://localhost:1313/p/redis%E7%AC%94%E8%AE%B0/e0f12bb2ec86a77c779b904b79e29ca5.jpg" alt="Featured image of post Redis笔记" /&gt;&lt;h1 id=&#34;概述&#34;&gt;概述
+        <guid>https://a-b-ab.github.io/p/redis%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/redis%E7%AC%94%E8%AE%B0/e0f12bb2ec86a77c779b904b79e29ca5.jpg" alt="Featured image of post Redis笔记" /&gt;&lt;h1 id=&#34;概述&#34;&gt;概述
 &lt;/h1&gt;&lt;p&gt;Redis 是一个开源的使用 ANSI C 语言编写、遵守 BSD 协议、支持网络、可基于内存、分布式、可选持久性的键值对(Key-Value)存储数据库，并提供多种语言的 API。&lt;/p&gt;
 &lt;p&gt;Redis（Remote Dictionary Server）是一个开源的内存数据库，遵守 BSD 协议，它提供了一个高性能的键值（key-value）存储系统，常用于缓存、消息队列、会话存储等应用场景。&lt;/p&gt;
 &lt;h1 id=&#34;数据结构&#34;&gt;数据结构
@@ -4625,11 +4625,11 @@ maxclients 的默认值是 10000，你也可以在 redis.conf 中对这个值进
         </item>
         <item>
         <title>SQLAlchemy笔记</title>
-        <link>http://localhost:1313/p/sqlalchemy%E7%AC%94%E8%AE%B0/</link>
+        <link>https://a-b-ab.github.io/p/sqlalchemy%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/sqlalchemy%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="http://localhost:1313/p/sqlalchemy%E7%AC%94%E8%AE%B0/bebc542adb28a4465a71050225954ca26cb14e96.jpg" alt="Featured image of post SQLAlchemy笔记" /&gt;&lt;h1 id=&#34;概述&#34;&gt;概述
+        <guid>https://a-b-ab.github.io/p/sqlalchemy%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/sqlalchemy%E7%AC%94%E8%AE%B0/bebc542adb28a4465a71050225954ca26cb14e96.jpg" alt="Featured image of post SQLAlchemy笔记" /&gt;&lt;h1 id=&#34;概述&#34;&gt;概述
 &lt;/h1&gt;&lt;p&gt;SQLAlchemy SQL 工具包和对象关系映射器是一套用于处理数据库和 Python 的综合工具&lt;/p&gt;
 &lt;p&gt;SQLAlchemy 最重要的两个面向用户的部分是对象关系映射器 (ORM)和Core。&lt;/p&gt;
 &lt;p&gt;Core 包含了 SQLAlchemy 的 SQL 和数据库集成以及描述服务的广度，其中最突出的是SQL 表达式语言。&lt;/p&gt;
@@ -4799,11 +4799,11 @@ maxclients 的默认值是 10000，你也可以在 redis.conf 中对这个值进
         </item>
         <item>
         <title>Ruia笔记</title>
-        <link>http://localhost:1313/p/ruia%E7%AC%94%E8%AE%B0/</link>
+        <link>https://a-b-ab.github.io/p/ruia%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Tue, 30 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/ruia%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="http://localhost:1313/p/ruia%E7%AC%94%E8%AE%B0/Picgo202403181915672.jpeg" alt="Featured image of post Ruia笔记" /&gt;&lt;h1 id=&#34;快速开始&#34;&gt;快速开始
+        <guid>https://a-b-ab.github.io/p/ruia%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/ruia%E7%AC%94%E8%AE%B0/Picgo202403181915672.jpeg" alt="Featured image of post Ruia笔记" /&gt;&lt;h1 id=&#34;快速开始&#34;&gt;快速开始
 &lt;/h1&gt;&lt;p&gt;基于Ruia快速实现一个以Hacker News为目标的爬虫
 本文主要通过对hacker News的爬取示例来展示如何使用ruia。&lt;/p&gt;
 &lt;h2 id=&#34;第一步定义item&#34;&gt;第一步：定义item

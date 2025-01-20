@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Vercel on 乌鸦</title>
-        <link>http://localhost:1313/categories/vercel/</link>
+        <link>https://a-b-ab.github.io/categories/vercel/</link>
         <description>Recent content in Vercel on 乌鸦</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Sat, 19 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/vercel/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 19 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/vercel/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>基于github和vercel部署自定义域名网站</title>
-        <link>http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/</link>
+        <link>https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/</link>
         <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/6015cf7ecba254fdaf9793afbffab6b2.jpg" alt="Featured image of post 基于github和vercel部署自定义域名网站" /&gt;&lt;h1 id=&#34;基于github和vercel部署自定义域名网站&#34;&gt;基于github和vercel部署自定义域名网站
+        <guid>https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/6015cf7ecba254fdaf9793afbffab6b2.jpg" alt="Featured image of post 基于github和vercel部署自定义域名网站" /&gt;&lt;h1 id=&#34;基于github和vercel部署自定义域名网站&#34;&gt;基于github和vercel部署自定义域名网站
 &lt;/h1&gt;&lt;p&gt;假设你已经可以在本地运行个人网站&lt;/p&gt;
 &lt;p&gt;其实就是&lt;code&gt;hugo&lt;/code&gt;主题文件配置好后：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -50,10 +50,10 @@
 &lt;p&gt;刷新一下你的远程仓库里面就有&lt;code&gt;public&lt;/code&gt;文件了&lt;/p&gt;
 &lt;h2 id=&#34;进行github-page托管&#34;&gt;进行&lt;code&gt;github page&lt;/code&gt;托管
 &lt;/h2&gt;&lt;p&gt;如图：在仓库主页点击&lt;code&gt;settings&lt;/code&gt;然后进入&lt;code&gt;pages&lt;/code&gt;，看到图中的&lt;code&gt;branch&lt;/code&gt;默认以&lt;code&gt;main&lt;/code&gt;作为部署分支，点击&lt;code&gt;save&lt;/code&gt;然后过一会在页面可以看到&lt;code&gt;visit site&lt;/code&gt;点击后就可以跳转到你的网站了，别人可以通过这个&lt;code&gt;url&lt;/code&gt;来访问你的网站了&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image.png&#34;
 	width=&#34;2024&#34;
 	height=&#34;870&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image_hu40d989dc8ae1953ceee15779ae0caf1b_136473_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image_hu40d989dc8ae1953ceee15779ae0caf1b_136473_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image_hu40d989dc8ae1953ceee15779ae0caf1b_136473_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image_hu40d989dc8ae1953ceee15779ae0caf1b_136473_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -85,10 +85,10 @@
 &lt;p&gt;先进入&lt;a class=&#34;link&#34; href=&#34;https://www.bing.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;vercel&lt;/code&gt;官网&lt;/a&gt;,注册账户,建议使用&lt;code&gt;github&lt;/code&gt;账号关联&lt;/p&gt;
 &lt;p&gt;点击 &lt;code&gt;add new&lt;/code&gt;或者&lt;code&gt;import project&lt;/code&gt;，然后&lt;code&gt;import&lt;/code&gt;对应的你想进行托管的&lt;code&gt;github&lt;/code&gt;仓库&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1.png&#34;
 	width=&#34;2544&#34;
 	height=&#34;1311&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1_huc7ee46cd0b42ce6e0fda5bc34b360678_331363_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1_huc7ee46cd0b42ce6e0fda5bc34b360678_331363_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1_huc7ee46cd0b42ce6e0fda5bc34b360678_331363_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-1_huc7ee46cd0b42ce6e0fda5bc34b360678_331363_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -100,10 +100,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;因为你的&lt;code&gt;public&lt;/code&gt;已经是静态文件了，可以直接&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2.png&#34;
 	width=&#34;1028&#34;
 	height=&#34;545&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2_hu83083ecc4073af75f5bb4293c213762b_26591_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2_hu83083ecc4073af75f5bb4293c213762b_26591_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2_hu83083ecc4073af75f5bb4293c213762b_26591_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-2_hu83083ecc4073af75f5bb4293c213762b_26591_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -118,10 +118,10 @@
 &lt;h2 id=&#34;自定义域名&#34;&gt;自定义域名
 &lt;/h2&gt;&lt;p&gt;首先你得买个域名先，这一步以后写，国内的域名需要备案，我买的是国外的域名，用的是&lt;code&gt;cloudflare&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;点击你的&lt;code&gt;vercel&lt;/code&gt;对应托管的网站&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3.png&#34;
 	width=&#34;2240&#34;
 	height=&#34;1043&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3_huca6a440835fbd804f3fab4670297740f_442824_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3_huca6a440835fbd804f3fab4670297740f_442824_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3_huca6a440835fbd804f3fab4670297740f_442824_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-3_huca6a440835fbd804f3fab4670297740f_442824_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -134,10 +134,10 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;点击 &lt;code&gt;Domains&lt;/code&gt;在输入框输入你要绑定的自定义域名，然后点击&lt;code&gt;add&lt;/code&gt;,完成后。&lt;/p&gt;
 &lt;p&gt;进入你管理域名的软件，进行域名解析，就可以了
-&lt;img src=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4.png&#34;
+&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4.png&#34;
 	width=&#34;2080&#34;
 	height=&#34;1057&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4_hu5265a0839d6e309e57e8c02711aa1edd_143494_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4_hu5265a0839d6e309e57e8c02711aa1edd_143494_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4_hu5265a0839d6e309e57e8c02711aa1edd_143494_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-4_hu5265a0839d6e309e57e8c02711aa1edd_143494_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -149,10 +149,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;域名解析用&lt;code&gt;cname&lt;/code&gt;，然后名称是自定义的域名，后面的是你在&lt;code&gt;vercel&lt;/code&gt;中&lt;code&gt;add&lt;/code&gt;操作得到的域名，保存就可以了&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5.png&#34;
 	width=&#34;2482&#34;
 	height=&#34;830&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5_hu383dd86c8eea783eeb5619e5c624454b_1259521_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5_hu383dd86c8eea783eeb5619e5c624454b_1259521_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5_hu383dd86c8eea783eeb5619e5c624454b_1259521_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/%E5%9F%BA%E4%BA%8Egithub%E5%92%8Cvercel%E9%83%A8%E7%BD%B2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99/image-5_hu383dd86c8eea783eeb5619e5c624454b_1259521_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;

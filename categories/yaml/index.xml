@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Yaml on 乌鸦</title>
-        <link>http://localhost:1313/categories/yaml/</link>
+        <link>https://a-b-ab.github.io/categories/yaml/</link>
         <description>Recent content in Yaml on 乌鸦</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Sun, 26 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/yaml/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 26 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/yaml/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Yaml笔记</title>
-        <link>http://localhost:1313/p/yaml%E7%AC%94%E8%AE%B0/</link>
+        <link>https://a-b-ab.github.io/p/yaml%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/yaml%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="http://localhost:1313/p/yaml%E7%AC%94%E8%AE%B0/8d65db2f2003a7a63c85ae9e4edb4f2d.jpg" alt="Featured image of post Yaml笔记" /&gt;&lt;h1 id=&#34;介绍&#34;&gt;介绍
+        <guid>https://a-b-ab.github.io/p/yaml%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/yaml%E7%AC%94%E8%AE%B0/8d65db2f2003a7a63c85ae9e4edb4f2d.jpg" alt="Featured image of post Yaml笔记" /&gt;&lt;h1 id=&#34;介绍&#34;&gt;介绍
 &lt;/h1&gt;&lt;p&gt;YAML 是 &amp;ldquo;YAML Ain&amp;rsquo;t a Markup Language&amp;rdquo;（YAML 不是一种标记语言）的递归缩写。在开发的这种语言时，YAML 的意思其实是：&amp;ldquo;Yet Another Markup Language&amp;rdquo;（仍是一种标记语言）。&lt;/p&gt;
 &lt;p&gt;YAML 的语法和其他高级语言类似，并且可以简单表达清单、散列表，标量等数据形态。它使用空白符号缩进和大量依赖外观的特色，特别适合用来表达或编辑数据结构、各种配置文件、倾印调试内容、文件大纲（例如：许多电子邮件标题格式和YAML非常接近）。&lt;/p&gt;
 &lt;p&gt;YAML 的配置文件后缀为 .yml，如：runoob.yml 。&lt;/p&gt;

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>AI on 乌鸦</title>
-        <link>http://localhost:1313/categories/ai/</link>
+        <link>https://a-b-ab.github.io/categories/ai/</link>
         <description>Recent content in AI on 乌鸦</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Sat, 30 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/ai/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 30 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/ai/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>机器学习基础笔记</title>
-        <link>http://localhost:1313/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</link>
+        <link>https://a-b-ab.github.io/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Sat, 30 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/097ac305590341a9a724bf7be454397f9b1719b3.jpg" alt="Featured image of post 机器学习基础笔记" /&gt;&lt;h1 id=&#34;绪论&#34;&gt;绪论
+        <guid>https://a-b-ab.github.io/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/097ac305590341a9a724bf7be454397f9b1719b3.jpg" alt="Featured image of post 机器学习基础笔记" /&gt;&lt;h1 id=&#34;绪论&#34;&gt;绪论
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;通常将优化一个模型的过程称为训练或学习&lt;/li&gt;
 &lt;li&gt;检验模型效果的过程称为测试&lt;/li&gt;

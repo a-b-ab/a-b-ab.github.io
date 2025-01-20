@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>数据库 on 乌鸦</title>
-        <link>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+        <link>https://a-b-ab.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
         <description>Recent content in 数据库 on 乌鸦</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright>
-        <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-b-ab.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>MySQL面试题</title>
-        <link>http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+        <link>https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
         <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-        <description>&lt;img src="http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/2d5af84764dc1c4b23b15122a70a707d.jpg" alt="Featured image of post MySQL面试题" /&gt;&lt;h1 id=&#34;mysql有哪几种数据存储引擎有什么区别&#34;&gt;MySQL有哪几种数据存储引擎，有什么区别
+        <guid>https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/2d5af84764dc1c4b23b15122a70a707d.jpg" alt="Featured image of post MySQL面试题" /&gt;&lt;h1 id=&#34;mysql有哪几种数据存储引擎有什么区别&#34;&gt;MySQL有哪几种数据存储引擎，有什么区别
 &lt;/h1&gt;&lt;p&gt;MySQL支持多种数据存储引擎，其中最常见的是&lt;code&gt;MyISAM&lt;/code&gt;和&lt;code&gt;InnoDB&lt;/code&gt;引擎。可以通过使用&amp;quot;&lt;code&gt;show engines&lt;/code&gt;&amp;ldquo;命令查看MySQL支持的存储引擎。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;存储方式&lt;/code&gt;：&lt;code&gt;MyISAM引擎&lt;/code&gt;将数据和索引分别存储在两个不同的文件中，一个是&lt;code&gt;.MYD用于存储数据&lt;/code&gt;，一个是&lt;code&gt;.MYI文件用于存储索引&lt;/code&gt;，而I&lt;code&gt;nnoDB引擎&lt;/code&gt;将数据和索引存储在同一个文件中&lt;/li&gt;
@@ -93,10 +93,10 @@
 &lt;p&gt;使用覆盖索引可以提高查询性能的原因是，索引通常比数据行小很多，所以从索引中读取数据比从数据行中读取数据更快。此外，覆盖索引还可以减少内存的使用，因为不需要将数据行加载到内存中进行处理。&lt;/p&gt;
 &lt;p&gt;为了使用覆盖索引，需要确保查询语句中只包含索引字段，并且索引能够满足查询条件和排序需求。如果查询语句中包含了非索引字段，那么数据库引擎仍然需要回表去读取数据行，无法实现覆盖索引查询的优化效果。&lt;/p&gt;
 &lt;h1 id=&#34;mysql的集群是如何搭建的读写分离是怎么做的&#34;&gt;MySQL的集群是如何搭建的，读写分离是怎么做的
-&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image.png&#34;
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image.png&#34;
 	width=&#34;712&#34;
 	height=&#34;478&#34;
-	srcset=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image_hub886812bb151133a1a28da14eecdf1a2_203396_480x0_resize_box_3.png 480w, http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image_hub886812bb151133a1a28da14eecdf1a2_203396_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image_hub886812bb151133a1a28da14eecdf1a2_203396_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image_hub886812bb151133a1a28da14eecdf1a2_203396_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -127,10 +127,10 @@
 &lt;/ul&gt;
 &lt;p&gt;分库分表会引入新的问题，例如数据的拆分和合并、开发和维护的复杂度增加等。因此，在选择分库分表之前，需要根据业务的增长速度和数据量来判断是否需要进行分库分表。根据阿里的开发规范手册，一般在数据量达到500万或单个表文件大小增长到2G时，可以考虑进行分库分表的规划。&lt;/p&gt;
 &lt;p&gt;通常，可以使用一些开源的分库分表中间件，如Mycat或ShardingSphere，来实现分库分表功能。这些中间件支持DDL、DML等语句的执行，能够进行排序、分组聚合等操作。但对于一些复杂的SQL语句，如子查询，可能存在一定的限制&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1.png&#34;
 	width=&#34;747&#34;
 	height=&#34;754&#34;
-	srcset=&#34;http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1_hu6ee8df2b5bd0003344c3424e009bdeca_128905_480x0_resize_box_3.png 480w, http://localhost:1313/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1_hu6ee8df2b5bd0003344c3424e009bdeca_128905_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1_hu6ee8df2b5bd0003344c3424e009bdeca_128905_480x0_resize_box_3.png 480w, https://a-b-ab.github.io/p/mysql%E9%9D%A2%E8%AF%95%E9%A2%98/image-1_hu6ee8df2b5bd0003344c3424e009bdeca_128905_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -146,11 +146,11 @@
         </item>
         <item>
         <title>Redis笔记</title>
-        <link>http://localhost:1313/p/redis%E7%AC%94%E8%AE%B0/</link>
+        <link>https://a-b-ab.github.io/p/redis%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/redis%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="http://localhost:1313/p/redis%E7%AC%94%E8%AE%B0/e0f12bb2ec86a77c779b904b79e29ca5.jpg" alt="Featured image of post Redis笔记" /&gt;&lt;h1 id=&#34;概述&#34;&gt;概述
+        <guid>https://a-b-ab.github.io/p/redis%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/redis%E7%AC%94%E8%AE%B0/e0f12bb2ec86a77c779b904b79e29ca5.jpg" alt="Featured image of post Redis笔记" /&gt;&lt;h1 id=&#34;概述&#34;&gt;概述
 &lt;/h1&gt;&lt;p&gt;Redis 是一个开源的使用 ANSI C 语言编写、遵守 BSD 协议、支持网络、可基于内存、分布式、可选持久性的键值对(Key-Value)存储数据库，并提供多种语言的 API。&lt;/p&gt;
 &lt;p&gt;Redis（Remote Dictionary Server）是一个开源的内存数据库，遵守 BSD 协议，它提供了一个高性能的键值（key-value）存储系统，常用于缓存、消息队列、会话存储等应用场景。&lt;/p&gt;
 &lt;h1 id=&#34;数据结构&#34;&gt;数据结构
@@ -605,11 +605,11 @@ maxclients 的默认值是 10000，你也可以在 redis.conf 中对这个值进
         </item>
         <item>
         <title>MySQL简单命令</title>
-        <link>http://localhost:1313/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</link>
+        <link>https://a-b-ab.github.io/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</link>
         <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</guid>
-        <description>&lt;img src="http://localhost:1313/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/8c8b581ab1cf8ea5e3aa00cfb897ea4e.jpg" alt="Featured image of post MySQL简单命令" /&gt;&lt;h1 id=&#34;mysql基本操作命令汇总&#34;&gt;MySQL基本操作命令汇总
+        <guid>https://a-b-ab.github.io/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/p/mysql%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/8c8b581ab1cf8ea5e3aa00cfb897ea4e.jpg" alt="Featured image of post MySQL简单命令" /&gt;&lt;h1 id=&#34;mysql基本操作命令汇总&#34;&gt;MySQL基本操作命令汇总
 &lt;/h1&gt;&lt;h2 id=&#34;基本操作&#34;&gt;基本操作
 &lt;/h2&gt;&lt;p&gt;对数据库以及表的一些基本操作&lt;/p&gt;
 &lt;h3 id=&#34;关于数据库&#34;&gt;关于数据库
