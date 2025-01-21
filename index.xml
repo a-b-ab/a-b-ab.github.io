@@ -7,6 +7,81 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>乌鸦的记录博客</copyright><atom:link href="https://a-b-ab.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>发起一个PR</title>
+        <link>https://a-b-ab.github.io/p/%E5%8F%91%E8%B5%B7%E4%B8%80%E4%B8%AApr/</link>
+        <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://a-b-ab.github.io/p/%E5%8F%91%E8%B5%B7%E4%B8%80%E4%B8%AApr/</guid>
+        <description>&lt;img src="https://a-b-ab.github.io/b2df4789359238a9c06909a4b06c2c45.jpg" alt="Featured image of post 发起一个PR" /&gt;&lt;h1 id=&#34;前言&#34;&gt;前言
+&lt;/h1&gt;&lt;p&gt;最近参与工作室开源项目的开发，需要自己&lt;code&gt;Fork&lt;/code&gt;公司项目到自己的项目然后发起&lt;code&gt;PR(Pull Request)&lt;/code&gt;，这其中让我对&lt;code&gt;Git&lt;/code&gt;管理有了更深的理解&lt;/p&gt;
+&lt;h2 id=&#34;fork项目的自己的github仓库&#34;&gt;&lt;code&gt;Fork&lt;/code&gt;项目的自己的&lt;code&gt;Github&lt;/code&gt;仓库
+&lt;/h2&gt;&lt;h2 id=&#34;点击code复制仓库的url&#34;&gt;点击&lt;code&gt;Code&lt;/code&gt;复制仓库的&lt;code&gt;URL&lt;/code&gt;
+&lt;/h2&gt;&lt;p&gt;我最开始是复制&lt;code&gt;HTTP&lt;/code&gt;类型的，不过可能因为&lt;code&gt;Github&lt;/code&gt;的原因，我一直&lt;code&gt;push&lt;/code&gt;不上去，后面找了资料，利用&lt;code&gt;SSH&lt;/code&gt;解决的，所以我们复制&lt;code&gt;SSH&lt;/code&gt;类型&lt;/p&gt;
+&lt;h2 id=&#34;git全局配置&#34;&gt;&lt;code&gt;Git&lt;/code&gt;全局配置
+&lt;/h2&gt;&lt;p&gt;查看自己的git配置&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git config -l&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;配置自己的邮箱&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git config &amp;ndash;global user.name &amp;ldquo;username&amp;rdquo;
+git config &amp;ndash;global user.email &amp;ldquo;email&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;记住你的用户名和邮箱&lt;/p&gt;
+&lt;h2 id=&#34;生成ssh私钥和公钥&#34;&gt;生成&lt;code&gt;ssh&lt;/code&gt;私钥和公钥
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;ssh-keygen -t rsa -C &amp;ldquo;email&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/img1.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;直接两个&lt;code&gt;enter&lt;/code&gt;，一个yes覆盖，不设置密码&lt;/p&gt;
+&lt;h2 id=&#34;配置密钥&#34;&gt;配置密钥
+&lt;/h2&gt;&lt;p&gt;去生成的&lt;code&gt;id.rsa.pub&lt;/code&gt;文件复制密码，放到gitub项目&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://a-b-ab.github.io/image.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用ssh拉去代码&#34;&gt;使用&lt;code&gt;ssh&lt;/code&gt;拉去代码
+&lt;/h2&gt;&lt;p&gt;修改本地项目连接方式为ssh（针对之前用http连接拉取的）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git remote set-url origin &lt;a class=&#34;link&#34; href=&#34;mailto:git@github.com&#34; &gt;git@github.com&lt;/a&gt;:xxxx/xxxx.git&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git clone ssh项目地址
+git init
+git add .
+git commit -m &amp;ldquo;123&amp;rdquo;
+git push&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这样就可以push上去了&lt;/p&gt;
+&lt;h2 id=&#34;发起pr&#34;&gt;发起&lt;code&gt;PR&lt;/code&gt;
+&lt;/h2&gt;&lt;p&gt;这个在github页面操作很简单
+点击上方页面的&lt;code&gt;Pull Request&lt;/code&gt;，设置好目标url和你的url就可以
+&lt;img src=&#34;https://a-b-ab.github.io/image-1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>python工匠</title>
         <link>https://a-b-ab.github.io/p/python%E5%B7%A5%E5%8C%A0/</link>
         <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
